@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>SPROC 项目管理 Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        .progress-bar {
+            transition: width 0.5s ease;
+        }
+    </style>
+    <script>
+        // Check auth before page loads
+        if (sessionStorage.getItem('sproc_auth') !== 'true') {
+            window.location.href = 'index.html';
+        }
+    </script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <!-- Header -->
+    <header class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <div class="bg-white/20 p-3 rounded-lg">
+                        <i class="fas fa-building text-2xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold">SPROC Dashboard</h1>
+                        <p class="text-white/80 text-sm">建材采购与项目管理看板</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6">
+                    <div class="text-right">
+                        <p class="text-white/80 text-xs">最后更新</p>
+                        <p class="font-semibold" id="lastUpdate">2026-04-06</p>
+                    </div>
+                    <button onclick="refreshData()" class="bg-white/20 hover:bg-white/30 px-4 py-2 rounded-lg transition">
+                        <i class="fas fa-sync-alt mr-2"></i>刷新
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container mx-auto px-6 py-6">
+        <!-- KPI Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            <div class="bg-white rounded-xl p-6 shadow-sm card-hover transition-all duration-300">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-gray-500 text-sm">活跃项目总数</p>
+                        <h3 class="text-3xl font-bold text-gray-800 mt-2">14</h3>
+                        <p class="text-green-500 text-sm mt-1"><i class="fas fa-arrow-up mr-1"></i>+2 本月新增</p>
+                    </div>
+                    <div class="bg-blue-100 p-3 rounded-lg">
+                        <i class="fas fa-project-diagram text-blue-600 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl p-6 shadow-sm card-hover transition-all duration-300">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-gray-500 text-sm">本周待跟进</p>
+                        <h3 class="text-3xl font-bold text-gray-800 mt-2">6</h3>
+                        <p class="text-red-500 text-sm mt-1"><i class="fas fa-exclamation-circle mr-1"></i>3项紧急</p>
+                    </div>
+                    <div class="bg-red-100 p-3 rounded-lg">
+                        <i class="fas fa-tasks text-red-600 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl p-6 shadow-sm card-hover transition-all duration-300">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-gray-500 text-sm">待收款项</p>
+                        <h3 class="text-3xl font-bold text-gray-800 mt-2">$58,362</h3>
+                        <p class="text-yellow-500 text-sm mt-1"><i class="fas fa-clock mr-1"></i>1笔待确认</p>
+                    </div>
+                    <div class="bg-green-100 p-3 rounded-lg">
+                        <i class="fas fa-dollar-sign text-green-600 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl p-6 shadow-sm card-hover transition-all duration-300">
+                <div class="flex justify-between items-start">
+                    <div>
+                        <p class="text-gray-500 text-sm">合同签署率</p>
+                        <h3 class="text-3xl font-bold text-gray-800 mt-2">78%</h3>
+                        <p class="text-green-500 text-sm mt-1"><i class="fas fa-check-circle mr-1"></i>11/14 已签</p>
+                    </div>
+                    <div class="bg-purple-100 p-3 rounded-lg">
+                        <i class="fas fa-file-signature text-purple-600 text-xl"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <!-- Left Column - Project Status Chart -->
+            <div class="lg:col-span-1">
+                <div class="bg-white rounded-xl shadow-sm p-6 mb-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                        <i class="fas fa-chart-pie mr-2 text-blue-500"></i>项目状态分布
+                    </h3>
+                    <canvas id="statusChart" height="200"></canvas>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                        <i class="fas fa-exclamation-triangle mr-2 text-red-500"></i>本周紧急事项
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center p-3 bg-red-50 rounded-lg border-l-4 border-red-500">
+                            <div class="flex-1">
+                                <p class="font-medium text-gray-800">16616 橱柜确认</p>
+                                <p class="text-sm text-gray-500">等待颜色/材料/五金规格</p>
+                            </div>
+                            <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">今天</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-red-50 rounded-lg border-l-4 border-red-500">
+                            <div class="flex-1">
+                                <p class="font-medium text-gray-800">14221 钢制门</p>
+                                <p class="text-sm text-gray-500">确认规格和材质选择</p>
+                            </div>
+                            <span class="text-xs bg-red-100 text-red-600 px-2 py-1 rounded">明天</span>
+                        </div>
+                        <div class="flex items-center p-3 bg-orange-50 rounded-lg border-l-4 border-orange-500">
+                            <div class="flex-1">
+                                <p class="font-medium text-gray-800">Norwalk 文档包</p>
+                                <p class="text-sm text-gray-500">提交完整Submittal Package</p>
+                            </div>
+                            <span class="text-xs bg-orange-100 text-orange-600 px-2 py-1 rounded">本周</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle Column - Project List -->
+            <div class="lg:col-span-2">
+                <div class="bg-white rounded-xl shadow-sm p-6">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-lg font-semibold text-gray-800">
+                            <i class="fas fa-list-alt mr-2 text-blue-500"></i>Richard Heyman 项目群
+                        </h3>
+                        <div class="flex space-x-2">
+                            <button onclick="filterProjects('all')" class="px-3 py-1 text-sm bg-blue-100 text-blue-600 rounded-full hover:bg-blue-200 transition">全部</button>
+                            <button onclick="filterProjects('urgent')" class="px-3 py-1 text-sm bg-red-100 text-red-600 rounded-full hover:bg-red-200 transition">紧急</button>
+                            <button onclick="filterProjects('active')" class="px-3 py-1 text-sm bg-green-100 text-green-600 rounded-full hover:bg-green-200 transition">进行中</button>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-4" id="projectList">
+                        <!-- Project Items -->
+                        <div class="project-item border rounded-lg p-4 hover:shadow-md transition-all" data-status="urgent">
+                            <div class="flex justify-between items-start mb-2">
+                                <div class="flex items-center">
+                                    <span class="status-dot bg-red-500 mr-3"></span>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">16616 Bienveneda</h4>
+                                        <p class="text-sm text-gray-500">橱柜 + 入户门</p>
+                                    </div>
+                                </div>
+                                <span class="bg-yellow-100 text-yellow-700 text-xs px-2 py-1 rounded-full">施工图完成</span>
+                            </div>
+                            <div class="ml-7">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-gray-600">项目进度</span>
+                                    <span class="font-medium">75%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-yellow-500 h-2 rounded-full progress-bar" style="width: 75%"></div>
+                                </div>
+                                <div class="flex justify-between mt-2 text-xs text-gray-500">
+                                    <span><i class="fas fa-file-alt mr-1"></i>Millwork施工图 4/4更新</span>
+                                    <span><i class="fas fa-dollar-sign mr-1"></i>定金 $12,647 待收</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-item border rounded-lg p-4 hover:shadow-md transition-all" data-status="urgent">
+                            <div class="flex justify-between items-start mb-2">
+                                <div class="flex items-center">
+                                    <span class="status-dot bg-red-500 mr-3"></span>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">14221 Evans Road</h4>
+                                        <p class="text-sm text-gray-500">钢制门（新建项目）</p>
+                                    </div>
+                                </div>
+                                <span class="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded-full">报价阶段</span>
+                            </div>
+                            <div class="ml-7">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-gray-600">项目进度</span>
+                                    <span class="font-medium">20%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-500 h-2 rounded-full progress-bar" style="width: 20%"></div>
+                                </div>
+                                <div class="flex justify-between mt-2 text-xs text-gray-500">
+                                    <span><i class="fas fa-file-alt mr-1"></i>Pan-Steel报价 4/3更新</span>
+                                    <span><i class="fas fa-check mr-1"></i>镀锌钢/热轧钢双版本</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-item border rounded-lg p-4 hover:shadow-md transition-all" data-status="urgent">
+                            <div class="flex justify-between items-start mb-2">
+                                <div class="flex items-center">
+                                    <span class="status-dot bg-orange-500 mr-3"></span>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">1202 Rimmer</h4>
+                                        <p class="text-sm text-gray-500">热断桥钢制门</p>
+                                    </div>
+                                </div>
+                                <span class="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded-full">报价阶段</span>
+                            </div>
+                            <div class="ml-7">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-gray-600">项目进度</span>
+                                    <span class="font-medium">30%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-500 h-2 rounded-full progress-bar" style="width: 30%"></div>
+                                </div>
+                                <div class="flex justify-between mt-2 text-xs text-gray-500">
+                                    <span><i class="fas fa-file-alt mr-1"></i>Forster系统报价 4/3更新</span>
+                                    <span><i class="fas fa-box mr-1"></i>门窗样品待跟进</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-item border rounded-lg p-4 hover:shadow-md transition-all" data-status="active">
+                            <div class="flex justify-between items-start mb-2">
+                                <div class="flex items-center">
+                                    <span class="status-dot bg-green-500 mr-3"></span>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">927 Bienveneda</h4>
+                                        <p class="text-sm text-gray-500">钢制门窗 $170K</p>
+                                    </div>
+                                </div>
+                                <span class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full">销售订单</span>
+                            </div>
+                            <div class="ml-7">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-gray-600">项目进度</span>
+                                    <span class="font-medium">85%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full progress-bar" style="width: 85%"></div>
+                                </div>
+                                <div class="flex justify-between mt-2 text-xs text-gray-500">
+                                    <span><i class="fas fa-check-circle mr-1"></i>V7销售订单已确认</span>
+                                    <span><i class="fas fa-industry mr-1"></i>待安排生产</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-item border rounded-lg p-4 hover:shadow-md transition-all" data-status="active">
+                            <div class="flex justify-between items-start mb-2">
+                                <div class="flex items-center">
+                                    <span class="status-dot bg-green-500 mr-3"></span>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">16620 Bienveneda</h4>
+                                        <p class="text-sm text-gray-500">橱柜 + 窗户</p>
+                                    </div>
+                                </div>
+                                <span class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded-full">施工图完成</span>
+                            </div>
+                            <div class="ml-7">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-gray-600">项目进度</span>
+                                    <span class="font-medium">80%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-green-500 h-2 rounded-full progress-bar" style="width: 80%"></div>
+                                </div>
+                                <div class="flex justify-between mt-2 text-xs text-gray-500">
+                                    <span><i class="fas fa-check-circle mr-1"></i>Derchi窗户 V5确认</span>
+                                    <span><i class="fas fa-truck mr-1"></i>待安排生产和发货</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-item border rounded-lg p-4 hover:shadow-md transition-all" data-status="active">
+                            <div class="flex justify-between items-start mb-2">
+                                <div class="flex items-center">
+                                    <span class="status-dot bg-blue-500 mr-3"></span>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-800">629 Erskine</h4>
+                                        <p class="text-sm text-gray-500">新项目（窗户+楼梯）</p>
+                                    </div>
+                                </div>
+                                <span class="bg-blue-100 text-blue-700 text-xs px-2 py-1 rounded-full">设计阶段</span>
+                            </div>
+                            <div class="ml-7">
+                                <div class="flex justify-between text-sm mb-1">
+                                    <span class="text-gray-600">项目进度</span>
+                                    <span class="font-medium">25%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2">
+                                    <div class="bg-blue-500 h-2 rounded-full progress-bar" style="width: 25%"></div>
+                                </div>
+                                <div class="flex justify-between mt-2 text-xs text-gray-500">
+                                    <span><i class="fas fa-file-alt mr-1"></i>设计修改建议 3/31发送</span>
+                                    <span><i class="fas fa-dollar-sign mr-1"></i>楼梯报价已收</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Section - West Modular & Summary -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+            <div class="bg-white rounded-xl shadow-sm p-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                    <i class="fas fa-hard-hat mr-2 text-orange-500"></i>West Modular Norwalk
+                </h3>
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <p class="text-2xl font-bold text-gray-800">$58,362</p>
+                        <p class="text-gray-500 text-sm">形式发票金额</p>
+                    </div>
+                    <div class="text-right">
+                        <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">✅ 合同已签署</span>
+                        <p class="text-xs text-gray-500 mt-1">3月26日</p>
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <div class="flex items-center text-sm">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>AIA合同签署完成</span>
+                    </div>
+                    <div class="flex items-center text-sm">
+                        <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                        <span>PI已开具（4月1日）</span>
+                    </div>
+                    <div class="flex items-center text-sm text-orange-600">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>待提交完整文档包（Submittal Package）</span>
+                    </div>
+                </div>
+                <div class="mt-4 p-3 bg-orange-50 rounded-lg">
+                    <p class="text-sm text-orange-800">
+                        <i class="fas fa-info-circle mr-1"></i>
+                        需提交：产品数据表、12"x12"实物样品、AAMA/WDMA认证、性能测试报告
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm p-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">
+                    <i class="fas fa-calendar-week mr-2 text-purple-500"></i>本周行动清单
+                </h3>
+                <div class="space-y-3">
+                    <div class="flex items-center p-3 border-l-4 border-red-500 bg-red-50 rounded-r-lg">
+                        <div class="flex-1">
+                            <p class="font-medium text-gray-800">1. 16616 橱柜确认</p>
+                            <p class="text-sm text-gray-500">确认颜色/材料/五金规格给Maggie</p>
+                        </div>
+                        <span class="text-xs bg-red-200 text-red-700 px-2 py-1 rounded">今天</span>
+                    </div>
+                    <div class="flex items-center p-3 border-l-4 border-red-500 bg-red-50 rounded-r-lg">
+                        <div class="flex-1">
+                            <p class="font-medium text-gray-800">2. 14221 钢制门规格</p>
+                            <p class="text-sm text-gray-500">跟进Richard确认材质选择</p>
+                        </div>
+                        <span class="text-xs bg-red-200 text-red-700 px-2 py-1 rounded">明天</span>
+                    </div>
+                    <div class="flex items-center p-3 border-l-4 border-orange-500 bg-orange-50 rounded-r-lg">
+                        <div class="flex-1">
+                            <p class="font-medium text-gray-800">3. 1202 门窗样品</p>
+                            <p class="text-sm text-gray-500">跟进样品事宜</p>
+                        </div>
+                        <span class="text-xs bg-orange-200 text-orange-700 px-2 py-1 rounded">明天</span>
+                    </div>
+                    <div class="flex items-center p-3 border-l-4 border-yellow-500 bg-yellow-50 rounded-r-lg">
+                        <div class="flex-1">
+                            <p class="font-medium text-gray-800">4. Norwalk文档包</p>
+                            <p class="text-sm text-gray-500">提交完整Submittal Package</p>
+                        </div>
+                        <span class="text-xs bg-yellow-200 text-yellow-700 px-2 py-1 rounded">本周</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-8 text-center text-gray-500 text-sm pb-6">
+            <p>SPROC Dashboard © 2026 | 数据源自 OneDrive/SMRO 项目目录</p>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Chart
+        const ctx = document.getElementById('statusChart').getContext('2d');
+        const statusChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['销售订单', '施工图完成', '报价阶段', '设计阶段', '已完成'],
+                datasets: [{
+                    data: [3, 2, 5, 3, 1],
+                    backgroundColor: [
+                        '#10B981', // Green
+                        '#F59E0B', // Yellow
+                        '#3B82F6', // Blue
+                        '#8B5CF6', // Purple
+                        '#6B7280'  // Gray
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            usePointStyle: true,
+                            padding: 15,
+                            font: { size: 11 }
+                        }
+                    }
+                },
+                cutout: '65%'
+            }
+        });
+
+        // Filter function
+        function filterProjects(filter) {
+            const items = document.querySelectorAll('.project-item');
+            items.forEach(item => {
+                if (filter === 'all') {
+                    item.style.display = 'block';
+                } else if (filter === 'urgent' && item.dataset.status === 'urgent') {
+                    item.style.display = 'block';
+                } else if (filter === 'active' && item.dataset.status === 'active') {
+                    item.style.display = 'block';
+                } else if (filter !== 'all' && filter !== 'urgent' && filter !== 'active') {
+                    item.style.display = 'none';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        // Refresh function
+        function refreshData() {
+            const btn = document.querySelector('button[onclick="refreshData()"]');
+            const icon = btn.querySelector('i');
+            icon.classList.add('fa-spin');
+            
+            setTimeout(() => {
+                icon.classList.remove('fa-spin');
+                document.getElementById('lastUpdate').textContent = new Date().toISOString().split('T')[0];
+                alert('数据已刷新！');
+            }, 1000);
+        }
+
+        // Update last update date
+        document.getElementById('lastUpdate').textContent = new Date().toISOString().split('T')[0];
+    </script>
+</body>
+</html>
