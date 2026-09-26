@@ -1,0 +1,22 @@
+[
+  {
+    "fetchedAt": "2026-09-25T08:37:05.386Z",
+    "summary": {
+      "projects": 20,
+      "items": 23,
+      "amount": 2040744,
+      "unpriced": 3,
+      "paid": 5000,
+      "paidKnown": 1,
+      "paidUnknown": 22,
+      "remaining": 79387,
+      "remainingKnown": 1,
+      "target": 116894.9,
+      "targetKnown": 7,
+      "currentDue": 0,
+      "dueKnown": 0,
+      "urgent": 7
+    },
+    "changes": []
+  }
+]
