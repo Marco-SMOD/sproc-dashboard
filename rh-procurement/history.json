@@ -18,5 +18,391 @@
       "urgent": 7
     },
     "changes": []
+  },
+  {
+    "fetchedAt": "2026-10-02T08:43:44.407Z",
+    "summary": {
+      "projects": 20,
+      "items": 25,
+      "amount": 1866211,
+      "unpriced": 5,
+      "paid": 243897.6,
+      "paidKnown": 11,
+      "paidUnknown": 14,
+      "remaining": 376594.6,
+      "remainingKnown": 8,
+      "target": 218965.1,
+      "targetKnown": 7,
+      "currentDue": 0.2,
+      "dueKnown": 7,
+      "urgent": 6
+    },
+    "changes": [
+      {
+        "project": "927 Bienveneda",
+        "item": "Alu Window/Door",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "paid",
+            "before": null,
+            "after": 64530
+          },
+          {
+            "key": "paymentStage",
+            "before": "Pay-to 60%",
+            "after": "Pay-to 100%"
+          },
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 18000
+          }
+        ]
+      },
+      {
+        "project": "933 Bienveneda",
+        "item": "Window/Door package",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "amount",
+            "before": 191704,
+            "after": 176704
+          },
+          {
+            "key": "paid",
+            "before": null,
+            "after": 17670.4
+          },
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 15000
+          }
+        ]
+      },
+      {
+        "project": "949 Bienveneda",
+        "item": "Alu Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "paid",
+            "before": null,
+            "after": 7925
+          },
+          {
+            "key": "drawing",
+            "before": "",
+            "after": "Drafting"
+          },
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 15000
+          }
+        ]
+      },
+      {
+        "project": "16616 Bienveneda",
+        "item": "Garage Door",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "paid",
+            "before": null,
+            "after": 9529.2
+          }
+        ]
+      },
+      {
+        "project": "16616 Bienveneda",
+        "item": "Cabinet",
+        "kind": "Added",
+        "fields": []
+      },
+      {
+        "project": "16620 Bienveneda",
+        "item": "Alu Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "amount",
+            "before": 84387,
+            "after": 66387
+          },
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 18000
+          }
+        ]
+      },
+      {
+        "project": "14221 Evans",
+        "item": "Steel Window · VO",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "paid",
+            "before": null,
+            "after": 5692
+          },
+          {
+            "key": "paymentStage",
+            "before": "",
+            "after": "Pay-to 100%"
+          }
+        ]
+      },
+      {
+        "project": "14221 Evans",
+        "item": "Steel Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "paid",
+            "before": null,
+            "after": 46647
+          },
+          {
+            "key": "paymentStage",
+            "before": "Pay-to 50%",
+            "after": "Pay-to 100%"
+          }
+        ]
+      },
+      {
+        "project": "14833 Sunset",
+        "item": "Alu Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "amount",
+            "before": 45296,
+            "after": 22618
+          },
+          {
+            "key": "nextAction",
+            "before": "WT-150",
+            "after": "prepayment+shop drawing"
+          },
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 15000
+          }
+        ]
+      },
+      {
+        "project": "641 Alma",
+        "item": "Steel Doors,\nAlu-clad Wood window,\nInterior Doors,\nGarage Doors",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 18000
+          }
+        ]
+      },
+      {
+        "project": "3250 Serra",
+        "item": "Cabinet",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "amount",
+            "before": 73013,
+            "after": 72283
+          },
+          {
+            "key": "paid",
+            "before": null,
+            "after": 7228
+          },
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 18000
+          }
+        ]
+      },
+      {
+        "project": "629 Erskine",
+        "item": "Staircase",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "amount",
+            "before": 65944,
+            "after": 47944
+          },
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 18000
+          }
+        ]
+      },
+      {
+        "project": "867 ILIFF",
+        "item": "Stone",
+        "kind": "Added",
+        "fields": []
+      },
+      {
+        "project": "867 ILIFF",
+        "item": "Steel/Alu Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "amount",
+            "before": 109282,
+            "after": 94282
+          },
+          {
+            "key": "paid",
+            "before": null,
+            "after": 9428
+          }
+        ]
+      },
+      {
+        "project": "14821 Sunset",
+        "item": "Alu-clad Wood Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "amount",
+            "before": 124247,
+            "after": 106247
+          },
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 18000
+          }
+        ]
+      },
+      {
+        "project": "625 N. Palmera",
+        "item": "Steel Window & Alu-clad wood window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 18600
+          }
+        ]
+      },
+      {
+        "project": "1014 Galloway",
+        "item": "Alu Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "amount",
+            "before": 59524,
+            "after": 45524
+          },
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 14000
+          }
+        ]
+      },
+      {
+        "project": "940 Bienveneda",
+        "item": "Office Trailer",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "amount",
+            "before": 38601,
+            "after": 70123
+          },
+          {
+            "key": "paid",
+            "before": null,
+            "after": 7012
+          },
+          {
+            "key": "drawing",
+            "before": "",
+            "after": "Drafting"
+          },
+          {
+            "key": "paymentStage",
+            "before": "",
+            "after": "Pay-to 10%"
+          },
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 33000
+          }
+        ]
+      },
+      {
+        "project": "18400 Coastline",
+        "item": "Steel/Alu Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "drawing",
+            "before": "",
+            "after": "Drafting"
+          },
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 18000
+          }
+        ]
+      },
+      {
+        "project": "946 Bienveneda",
+        "item": "Alu Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "amount",
+            "before": 59045,
+            "after": 44045
+          },
+          {
+            "key": "production",
+            "before": "60",
+            "after": ""
+          },
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 15000
+          }
+        ]
+      },
+      {
+        "project": "15444 Albright",
+        "item": "Alu Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "production",
+            "before": "60",
+            "after": ""
+          },
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 18000
+          }
+        ]
+      }
+    ]
   }
 ]

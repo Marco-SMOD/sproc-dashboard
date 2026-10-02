@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-09-25T08:37:05.386Z",
+  "fetchedAt": "2026-10-02T08:43:44.407Z",
   "sourceUrl": "https://docs.google.com/spreadsheets/d/15y-Yj0r4saG3KJefyCQuuOI7K0d3mGynF7iljSQo7vY/edit?gid=1353027088#gid=1353027088",
-  "sourceRows": 44,
+  "sourceRows": 49,
   "currency": "USD",
   "currencyNote": "Amounts follow the source $ / USD notation and are treated as USD; no currency conversion is applied.",
   "latest": [
@@ -13,16 +13,16 @@
       "version": "V9",
       "amount": 64530,
       "amountRaw": "$64,530",
-      "paid": null,
-      "reportedUnpaid": null,
-      "logistics": null,
+      "paid": 64530,
+      "reportedUnpaid": 0,
+      "logistics": 18000,
       "date": "2026-09-16",
       "dateRaw": "16 Sep, 2026",
       "attachment": "V9-927-Slim frame-Window Quote-SPROC_Sep-17-2026.pdf",
       "priority": "Normal",
       "nextAction": "Shipment",
       "contract": "Under Execution",
-      "paymentStage": "Pay-to 60%",
+      "paymentStage": "Pay-to 100%",
       "drawing": "Approved",
       "production": "Rectifying",
       "leadDays": "60",
@@ -30,11 +30,10 @@
       "arrival": null,
       "actualArrival": null,
       "notes": [
-        "Aluminum window and window/door quotes are grouped as one purchase item; the latest quote date is used.",
-        "Cumulative actual payment is missing; blank is not treated as zero."
+        "Aluminum window and window/door quotes are grouped as one purchase item; the latest quote date is used."
       ],
-      "paidSource": null,
-      "targetPct": 60,
+      "paidSource": "Paid column",
+      "targetPct": 100,
       "group": "Alu Window/Door",
       "isVO": false,
       "id": "927 Bienveneda|Alu Window/Door",
@@ -111,9 +110,9 @@
       "historyCount": 2,
       "excluded": false,
       "included": true,
-      "remaining": null,
-      "target": 38718,
-      "currentDue": null,
+      "remaining": 0,
+      "target": 64530,
+      "currentDue": 0,
       "stage": "Rectification",
       "urgent": true
     },
@@ -196,14 +195,14 @@
     {
       "sourceRow": 7,
       "project": "933 Bienveneda",
-      "supplier": "Derchi",
-      "item": "Alu Window/Door",
+      "supplier": "Derchi/Ferro",
+      "item": "Alu/ Steel Window/Door",
       "version": "V8",
-      "amount": 191704,
-      "amountRaw": "$191,704",
-      "paid": null,
-      "reportedUnpaid": null,
-      "logistics": null,
+      "amount": 176704,
+      "amountRaw": "$176,704",
+      "paid": 17670.4,
+      "reportedUnpaid": 159034,
+      "logistics": 15000,
       "date": "2026-09-11",
       "dateRaw": "11 Sep, 2026",
       "attachment": "V8-933 Bienveneda Alu& Steel Window Quote-SPROC_Sep 11 2026.pdf",
@@ -218,10 +217,9 @@
       "arrival": null,
       "actualArrival": null,
       "notes": [
-        "The latest Derchi package may overlap the Ferro steel-window option. They are provisionally grouped; confirm whether steel windows are an additional purchase.",
-        "Cumulative actual payment is missing; blank is not treated as zero."
+        "The latest Derchi package may overlap the Ferro steel-window option. They are provisionally grouped; confirm whether steel windows are an additional purchase."
       ],
-      "paidSource": null,
+      "paidSource": "Paid column",
       "targetPct": 10,
       "group": "Window/Door package",
       "isVO": false,
@@ -236,7 +234,7 @@
           "amount": 245507,
           "amountRaw": "$245,507",
           "paid": null,
-          "reportedUnpaid": null,
+          "reportedUnpaid": 245507,
           "logistics": null,
           "date": "2026-04-24",
           "dateRaw": "24 Apr, 2026",
@@ -265,9 +263,9 @@
       "historyCount": 1,
       "excluded": false,
       "included": true,
-      "remaining": null,
-      "target": 19170.4,
-      "currentDue": null,
+      "remaining": 159033.6,
+      "target": 17670.4,
+      "currentDue": 0,
       "stage": "Shop drawings",
       "urgent": false
     },
@@ -279,9 +277,9 @@
       "version": "V5",
       "amount": 79245,
       "amountRaw": "$79,245",
-      "paid": null,
-      "reportedUnpaid": null,
-      "logistics": null,
+      "paid": 7925,
+      "reportedUnpaid": 71320,
+      "logistics": 15000,
       "date": "2026-07-27",
       "dateRaw": "27 Jul, 2026",
       "attachment": "V5-949-Window Quote-SPROC-20260727.pdf",
@@ -289,16 +287,14 @@
       "nextAction": "Shop drawing",
       "contract": "Preparing",
       "paymentStage": "Pay-to 10%",
-      "drawing": "",
+      "drawing": "Drafting",
       "production": "",
       "leadDays": "60",
       "shipping": null,
       "arrival": null,
       "actualArrival": null,
-      "notes": [
-        "Cumulative actual payment is missing; blank is not treated as zero."
-      ],
-      "paidSource": null,
+      "notes": [],
+      "paidSource": "Paid column",
       "targetPct": 10,
       "group": "Alu Window",
       "isVO": false,
@@ -307,10 +303,10 @@
       "historyCount": 0,
       "excluded": false,
       "included": true,
-      "remaining": null,
+      "remaining": 71320,
       "target": 7924.5,
-      "currentDue": null,
-      "stage": "Quote / Contracting",
+      "currentDue": 0,
+      "stage": "Shop drawings",
       "urgent": true
     },
     {
@@ -322,7 +318,7 @@
       "amount": 67602,
       "amountRaw": "$67,602",
       "paid": null,
-      "reportedUnpaid": null,
+      "reportedUnpaid": 67602,
       "logistics": null,
       "date": "2026-06-23",
       "dateRaw": "23 Jun, 2026",
@@ -364,7 +360,7 @@
       "amount": 23981,
       "amountRaw": "$23,981",
       "paid": null,
-      "reportedUnpaid": null,
+      "reportedUnpaid": 23981,
       "logistics": null,
       "date": "2026-03-18",
       "dateRaw": "18 Mar, 2026",
@@ -406,7 +402,7 @@
       "amount": 6851,
       "amountRaw": "$6,851",
       "paid": null,
-      "reportedUnpaid": null,
+      "reportedUnpaid": 6851,
       "logistics": null,
       "date": "2026-04-02",
       "dateRaw": "2 Apr, 2026",
@@ -447,13 +443,13 @@
       "version": "V2",
       "amount": 9529,
       "amountRaw": "$9,529",
-      "paid": null,
-      "reportedUnpaid": null,
+      "paid": 9529.2,
+      "reportedUnpaid": 0,
       "logistics": null,
       "date": "2026-03-31",
       "dateRaw": "31 Mar, 2026",
       "attachment": "V2_16616-Door QT-SMOD-26033101.pdf",
-      "priority": "Urgent",
+      "priority": "Completed",
       "nextAction": "Shipment",
       "contract": "Under Execution",
       "paymentStage": "Pay-to 100%",
@@ -464,9 +460,9 @@
       "arrival": "2026-09-13",
       "actualArrival": "2026-09-22",
       "notes": [
-        "Cumulative actual payment is missing; blank is not treated as zero."
+        "Actual payment exceeds the product quote. Check whether freight or other costs are included."
       ],
-      "paidSource": null,
+      "paidSource": "Paid column",
       "targetPct": 100,
       "group": "Garage Door",
       "isVO": false,
@@ -481,7 +477,7 @@
           "amount": 8705,
           "amountRaw": "$8,705",
           "paid": null,
-          "reportedUnpaid": null,
+          "reportedUnpaid": 8705,
           "logistics": null,
           "date": "2026-03-20",
           "dateRaw": "20 Mar, 2026",
@@ -509,23 +505,63 @@
       "historyCount": 1,
       "excluded": false,
       "included": true,
-      "remaining": null,
+      "remaining": 0,
       "target": 9529,
-      "currentDue": null,
+      "currentDue": 0,
       "stage": "Arrived",
-      "urgent": true
+      "urgent": false
     },
     {
       "sourceRow": 15,
+      "project": "16616 Bienveneda",
+      "supplier": "Yugang",
+      "item": "Cabinet",
+      "version": "V5",
+      "amount": 63236,
+      "amountRaw": "$63,236",
+      "paid": 63236,
+      "reportedUnpaid": 0,
+      "logistics": 25006,
+      "date": "2026-03-25",
+      "dateRaw": "25 Mar, 2026",
+      "attachment": "V5-16616-Cabinets Quote-SMOD-20260325.pdf",
+      "priority": "Completed",
+      "nextAction": "Shipment",
+      "contract": "Under Execution",
+      "paymentStage": "Pay-to 100%",
+      "drawing": "Approved",
+      "production": "Completed",
+      "leadDays": "45",
+      "shipping": "2026-08-08",
+      "arrival": "2026-09-13",
+      "actualArrival": "2026-09-22",
+      "notes": [],
+      "paidSource": "Paid column",
+      "targetPct": 100,
+      "group": "Cabinet",
+      "isVO": false,
+      "id": "16616 Bienveneda|Cabinet",
+      "history": [],
+      "historyCount": 0,
+      "excluded": false,
+      "included": true,
+      "remaining": 0,
+      "target": 63236,
+      "currentDue": 0,
+      "stage": "Arrived",
+      "urgent": false
+    },
+    {
+      "sourceRow": 16,
       "project": "16620 Bienveneda",
       "supplier": "Derchi",
       "item": "Alu Window",
       "version": "V6",
-      "amount": 84387,
-      "amountRaw": "$84,387",
+      "amount": 66387,
+      "amountRaw": "$66,387",
       "paid": 5000,
-      "reportedUnpaid": null,
-      "logistics": null,
+      "reportedUnpaid": 61387,
+      "logistics": 18000,
       "date": "2026-09-22",
       "dateRaw": "22 Sep, 2026",
       "attachment": "V7-16620 Bienveneda-Window Quote-SPROC_Sep-22-2026.pdf",
@@ -540,16 +576,16 @@
       "arrival": null,
       "actualArrival": null,
       "notes": [
-        "Version V6 conflicts with attachment V7. The $84,387 quote dated 2026-09-22 is selected by date."
+        "Version V6 conflicts with attachment V7. The quote dated 2026-09-22 is selected by date; the amount follows the current source."
       ],
-      "paidSource": "Payment Status text: USD 5000 Paid",
+      "paidSource": "Paid column",
       "targetPct": null,
       "group": "Alu Window",
       "isVO": false,
       "id": "16620 Bienveneda|Alu Window",
       "history": [
         {
-          "sourceRow": 16,
+          "sourceRow": 17,
           "project": "16620 Bienveneda",
           "supplier": "Derchi",
           "item": "Alu Window",
@@ -557,7 +593,7 @@
           "amount": 72214,
           "amountRaw": "$72,214",
           "paid": null,
-          "reportedUnpaid": null,
+          "reportedUnpaid": 72214,
           "logistics": null,
           "date": "2026-07-15",
           "dateRaw": "15 Jul, 2026",
@@ -585,14 +621,14 @@
       "historyCount": 1,
       "excluded": false,
       "included": true,
-      "remaining": 79387,
+      "remaining": 61387,
       "target": null,
       "currentDue": null,
       "stage": "Drawings approved",
       "urgent": true
     },
     {
-      "sourceRow": 17,
+      "sourceRow": 18,
       "project": "16620 Bienveneda",
       "supplier": "Modomade",
       "item": "Design Service",
@@ -600,7 +636,7 @@
       "amount": 40586,
       "amountRaw": "$40,586",
       "paid": null,
-      "reportedUnpaid": null,
+      "reportedUnpaid": 40586,
       "logistics": null,
       "date": "2026-03-31",
       "dateRaw": "31 Mar, 2026",
@@ -625,7 +661,7 @@
       "id": "16620 Bienveneda|Design Service",
       "history": [
         {
-          "sourceRow": 18,
+          "sourceRow": 19,
           "project": "16620 Bienveneda",
           "supplier": "Modomade",
           "item": "Design Service",
@@ -633,7 +669,7 @@
           "amount": 31666,
           "amountRaw": "$31,666",
           "paid": null,
-          "reportedUnpaid": null,
+          "reportedUnpaid": 31666,
           "logistics": null,
           "date": "2026-03-19",
           "dateRaw": "19 Mar, 2026",
@@ -668,7 +704,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 19,
+      "sourceRow": 20,
       "project": "1202 Rimmer",
       "supplier": "Pan Steel",
       "item": "Steel Window",
@@ -676,7 +712,7 @@
       "amount": 289994,
       "amountRaw": "$289,994",
       "paid": null,
-      "reportedUnpaid": null,
+      "reportedUnpaid": 289994,
       "logistics": null,
       "date": "2026-03-25",
       "dateRaw": "25 Mar, 2026",
@@ -710,15 +746,15 @@
       "urgent": true
     },
     {
-      "sourceRow": 20,
+      "sourceRow": 21,
       "project": "14221 Evans",
       "supplier": "Ferro",
       "item": "Steel Window",
       "version": "V1",
       "amount": 5692,
       "amountRaw": "$5,692",
-      "paid": null,
-      "reportedUnpaid": null,
+      "paid": 5692,
+      "reportedUnpaid": 0,
       "logistics": null,
       "date": "2026-09-17",
       "dateRaw": "17 Sep, 2026",
@@ -726,7 +762,7 @@
       "priority": "Normal",
       "nextAction": "Shipment",
       "contract": "Under Execution",
-      "paymentStage": "",
+      "paymentStage": "Pay-to 100%",
       "drawing": "Approved",
       "production": "Completed",
       "leadDays": "90",
@@ -734,11 +770,10 @@
       "arrival": null,
       "actualArrival": null,
       "notes": [
-        "The attachment is marked VO ($5,692). Confirm whether it is additive to the base order; excluded from the quote subtotal until clarified.",
-        "Cumulative actual payment is missing; blank is not treated as zero."
+        "The attachment is marked VO ($5,692). Confirm whether it is additive to the base order; excluded from the quote subtotal until clarified."
       ],
-      "paidSource": null,
-      "targetPct": null,
+      "paidSource": "Paid column",
+      "targetPct": 100,
       "group": "Steel Window · VO",
       "isVO": true,
       "excludeAmount": true,
@@ -754,15 +789,15 @@
       "urgent": false
     },
     {
-      "sourceRow": 21,
+      "sourceRow": 22,
       "project": "14221 Evans",
       "supplier": "Ferro",
       "item": "Steel Window",
       "version": "V1",
       "amount": 46647,
       "amountRaw": "$46,647",
-      "paid": null,
-      "reportedUnpaid": null,
+      "paid": 46647,
+      "reportedUnpaid": 0,
       "logistics": null,
       "date": "2026-05-12",
       "dateRaw": "12 May, 2026",
@@ -770,24 +805,22 @@
       "priority": "Normal",
       "nextAction": "Shipment",
       "contract": "Under Execution",
-      "paymentStage": "Pay-to 50%",
+      "paymentStage": "Pay-to 100%",
       "drawing": "Approved",
       "production": "Completed",
       "leadDays": "90",
       "shipping": null,
       "arrival": null,
       "actualArrival": null,
-      "notes": [
-        "Cumulative actual payment is missing; blank is not treated as zero."
-      ],
-      "paidSource": null,
-      "targetPct": 50,
+      "notes": [],
+      "paidSource": "Paid column",
+      "targetPct": 100,
       "group": "Steel Window",
       "isVO": false,
       "id": "14221 Evans|Steel Window",
       "history": [
         {
-          "sourceRow": 22,
+          "sourceRow": 23,
           "project": "14221 Evans",
           "supplier": "Ferro",
           "item": "Steel Window",
@@ -823,28 +856,28 @@
       "historyCount": 1,
       "excluded": false,
       "included": true,
-      "remaining": null,
-      "target": 23323.5,
-      "currentDue": null,
+      "remaining": 0,
+      "target": 46647,
+      "currentDue": 0,
       "stage": "Awaiting shipment / arrival",
       "urgent": false
     },
     {
-      "sourceRow": 23,
+      "sourceRow": 24,
       "project": "14833 Sunset",
       "supplier": "Derchi",
       "item": "Alu Window",
       "version": "V2",
-      "amount": 45296,
-      "amountRaw": "$45,296",
+      "amount": 22618,
+      "amountRaw": "$22,618",
       "paid": null,
       "reportedUnpaid": null,
-      "logistics": null,
-      "date": "2026-09-23",
-      "dateRaw": "23 Sep, 2026",
-      "attachment": "V2_14833 Sunset -Window Quote-SPROC-Sep-23-2026.pdf",
+      "logistics": 15000,
+      "date": "2026-09-25",
+      "dateRaw": "25 Sep, 2026",
+      "attachment": "V3_14833 Sunset -Window Quote-SPROC-Sep-25-2026.pdf",
       "priority": "Urgent",
-      "nextAction": "WT-150",
+      "nextAction": "prepayment+shop drawing",
       "contract": "",
       "paymentStage": "",
       "drawing": "",
@@ -863,7 +896,40 @@
       "id": "14833 Sunset|Alu Window",
       "history": [
         {
-          "sourceRow": 24,
+          "sourceRow": 25,
+          "project": "14833 Sunset",
+          "supplier": "Derchi",
+          "item": "Alu Window",
+          "version": "V2",
+          "amount": 30296,
+          "amountRaw": "$30,296",
+          "paid": null,
+          "reportedUnpaid": null,
+          "logistics": 15000,
+          "date": "2026-09-23",
+          "dateRaw": "23 Sep, 2026",
+          "attachment": "V2_14833 Sunset -Window Quote-SPROC-Sep-23-2026.pdf",
+          "priority": "Urgent",
+          "nextAction": "WT-150",
+          "contract": "",
+          "paymentStage": "",
+          "drawing": "",
+          "production": "",
+          "leadDays": "60",
+          "shipping": null,
+          "arrival": null,
+          "actualArrival": null,
+          "notes": [
+            "Cumulative actual payment is missing; blank is not treated as zero."
+          ],
+          "paidSource": null,
+          "targetPct": null,
+          "group": "Alu Window",
+          "isVO": false,
+          "id": "14833 Sunset|Alu Window"
+        },
+        {
+          "sourceRow": 26,
           "project": "14833 Sunset",
           "supplier": "Derchi",
           "item": "Alu Window",
@@ -896,7 +962,7 @@
           "id": "14833 Sunset|Alu Window"
         }
       ],
-      "historyCount": 1,
+      "historyCount": 2,
       "excluded": false,
       "included": true,
       "remaining": null,
@@ -906,7 +972,7 @@
       "urgent": true
     },
     {
-      "sourceRow": 25,
+      "sourceRow": 27,
       "project": "641 Alma",
       "supplier": "Ferro/\nLuvindow/\nForest Bright/\nDerchi",
       "item": "Steel Doors,\nAlu-clad Wood window,\nInterior Doors,\nGarage Doors",
@@ -915,7 +981,7 @@
       "amountRaw": "$294,461",
       "paid": null,
       "reportedUnpaid": null,
-      "logistics": null,
+      "logistics": 18000,
       "date": "2026-06-03",
       "dateRaw": "3 Jun, 2026",
       "attachment": "V1_641 ALMA REAL Window& Doors Quote 260603(+ET).pdf",
@@ -948,19 +1014,19 @@
       "urgent": false
     },
     {
-      "sourceRow": 26,
+      "sourceRow": 28,
       "project": "3250 Serra",
       "supplier": "Yugang",
       "item": "Cabinet",
-      "version": "V3",
-      "amount": 73013,
-      "amountRaw": "$73,013",
-      "paid": null,
-      "reportedUnpaid": null,
-      "logistics": null,
+      "version": "V4",
+      "amount": 72283,
+      "amountRaw": "$72,283",
+      "paid": 7228,
+      "reportedUnpaid": 65055,
+      "logistics": 18000,
       "date": "2026-08-24",
       "dateRaw": "24 Aug, 2026",
-      "attachment": "V3-3250 Serra Cabinets Quote-SPROC-20260824.pdf",
+      "attachment": "V4-3250 Serra Cabinets Quote-SPROC-20260910.pdf",
       "priority": "Urgent",
       "nextAction": "Shop drawing",
       "contract": "Preparing",
@@ -972,16 +1038,49 @@
       "arrival": null,
       "actualArrival": null,
       "notes": [
-        "Cumulative actual payment is missing; blank is not treated as zero."
+        "Different amounts share the same quote date. Source order is provisional; the amount is excluded pending review."
       ],
-      "paidSource": null,
+      "paidSource": "Paid column",
       "targetPct": 10,
       "group": "Cabinet",
       "isVO": false,
       "id": "3250 Serra|Cabinet",
       "history": [
         {
-          "sourceRow": 27,
+          "sourceRow": 29,
+          "project": "3250 Serra",
+          "supplier": "Yugang",
+          "item": "Cabinet",
+          "version": "V3",
+          "amount": 73013,
+          "amountRaw": "$73,013",
+          "paid": null,
+          "reportedUnpaid": null,
+          "logistics": 18000,
+          "date": "2026-08-24",
+          "dateRaw": "24 Aug, 2026",
+          "attachment": "V3-3250 Serra Cabinets Quote-SPROC-20260824.pdf",
+          "priority": "Urgent",
+          "nextAction": "Shop drawing",
+          "contract": "Preparing",
+          "paymentStage": "",
+          "drawing": "Updating",
+          "production": "",
+          "leadDays": "45",
+          "shipping": null,
+          "arrival": null,
+          "actualArrival": null,
+          "notes": [
+            "Cumulative actual payment is missing; blank is not treated as zero."
+          ],
+          "paidSource": null,
+          "targetPct": null,
+          "group": "Cabinet",
+          "isVO": false,
+          "id": "3250 Serra|Cabinet"
+        },
+        {
+          "sourceRow": 30,
           "project": "3250 Serra",
           "supplier": "Yugang",
           "item": "Cabinet",
@@ -1014,7 +1113,7 @@
           "id": "3250 Serra|Cabinet"
         },
         {
-          "sourceRow": 28,
+          "sourceRow": 31,
           "project": "3250 Serra",
           "supplier": "Yugang",
           "item": "Cabinet",
@@ -1047,7 +1146,7 @@
           "id": "3250 Serra|Cabinet"
         },
         {
-          "sourceRow": 30,
+          "sourceRow": 33,
           "project": "3250 Serra",
           "supplier": "Yugang",
           "item": "Cabinet",
@@ -1080,17 +1179,18 @@
           "id": "3250 Serra|Cabinet"
         }
       ],
-      "historyCount": 3,
+      "historyCount": 4,
+      "excludeAmount": true,
       "excluded": false,
-      "included": true,
+      "included": false,
       "remaining": null,
-      "target": 7301.3,
+      "target": null,
       "currentDue": null,
       "stage": "Shop drawings",
       "urgent": true
     },
     {
-      "sourceRow": 29,
+      "sourceRow": 32,
       "project": "3250 Serra",
       "supplier": "Yugang",
       "item": "Wall Panel",
@@ -1132,16 +1232,16 @@
       "urgent": false
     },
     {
-      "sourceRow": 31,
+      "sourceRow": 34,
       "project": "629 Erskine",
       "supplier": "Shangbu",
       "item": "Staircase",
       "version": "V4",
-      "amount": 65944,
-      "amountRaw": "$65,944",
+      "amount": 47944,
+      "amountRaw": "$47,944",
       "paid": null,
       "reportedUnpaid": null,
-      "logistics": null,
+      "logistics": 18000,
       "date": "2026-09-23",
       "dateRaw": "23 Sep, 2026",
       "attachment": "V4_629 Erskine staircase Quote-SPROC_Sep-23-2026(R).pdf",
@@ -1165,7 +1265,7 @@
       "id": "629 Erskine|Staircase",
       "history": [
         {
-          "sourceRow": 34,
+          "sourceRow": 37,
           "project": "629 Erskine",
           "supplier": "Modomade",
           "item": "Staircase",
@@ -1208,7 +1308,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 32,
+      "sourceRow": 35,
       "project": "629 Erskine",
       "supplier": "Derchi/\nNorth Window",
       "item": "Alu Window(slim)",
@@ -1242,7 +1342,7 @@
       "id": "629 Erskine|Alu Window(slim)",
       "history": [
         {
-          "sourceRow": 33,
+          "sourceRow": 36,
           "project": "629 Erskine",
           "supplier": "Derchi/\nNorth Window",
           "item": "Alu Window(slim)",
@@ -1286,15 +1386,57 @@
       "urgent": false
     },
     {
-      "sourceRow": 35,
+      "sourceRow": 38,
+      "project": "867 ILIFF",
+      "supplier": "Fujian Stone",
+      "item": "Stone",
+      "version": "V1",
+      "amount": 9523,
+      "amountRaw": "$9,523",
+      "paid": null,
+      "reportedUnpaid": null,
+      "logistics": null,
+      "date": "2026-09-30",
+      "dateRaw": "30 Sep, 2026",
+      "attachment": "V1_867 ILIFF ARCH Stone price-30-Sep-2026.pdf",
+      "priority": "Normal",
+      "nextAction": "",
+      "contract": "",
+      "paymentStage": "",
+      "drawing": "",
+      "production": "",
+      "leadDays": "30",
+      "shipping": null,
+      "arrival": null,
+      "actualArrival": null,
+      "notes": [
+        "Cumulative actual payment is missing; blank is not treated as zero."
+      ],
+      "paidSource": null,
+      "targetPct": null,
+      "group": "Stone",
+      "isVO": false,
+      "id": "867 ILIFF|Stone",
+      "history": [],
+      "historyCount": 0,
+      "excluded": false,
+      "included": true,
+      "remaining": null,
+      "target": null,
+      "currentDue": null,
+      "stage": "Quote / Contracting",
+      "urgent": false
+    },
+    {
+      "sourceRow": 39,
       "project": "867 ILIFF",
       "supplier": "Ferro/\nDerchi",
       "item": "Steel/Alu Window",
       "version": "V2",
-      "amount": 109282,
-      "amountRaw": "$109,282",
-      "paid": null,
-      "reportedUnpaid": null,
+      "amount": 94282,
+      "amountRaw": "$94,282",
+      "paid": 9428,
+      "reportedUnpaid": 84854,
       "logistics": null,
       "date": "2026-09-21",
       "dateRaw": "21 Sep, 2026",
@@ -1309,17 +1451,15 @@
       "shipping": null,
       "arrival": null,
       "actualArrival": null,
-      "notes": [
-        "Cumulative actual payment is missing; blank is not treated as zero."
-      ],
-      "paidSource": null,
+      "notes": [],
+      "paidSource": "Paid column",
       "targetPct": 10,
       "group": "Steel/Alu Window",
       "isVO": false,
       "id": "867 ILIFF|Steel/Alu Window",
       "history": [
         {
-          "sourceRow": 36,
+          "sourceRow": 40,
           "project": "867 ILIFF",
           "supplier": "Ferro/\nDerchi",
           "item": "Steel/Alu Window",
@@ -1355,23 +1495,23 @@
       "historyCount": 1,
       "excluded": false,
       "included": true,
-      "remaining": null,
-      "target": 10928.2,
-      "currentDue": null,
+      "remaining": 84854,
+      "target": 9428.2,
+      "currentDue": 0.2,
       "stage": "Shop drawings",
       "urgent": false
     },
     {
-      "sourceRow": 37,
+      "sourceRow": 41,
       "project": "14821 Sunset",
       "supplier": "Luvindow(Shandong Doorwin)",
       "item": "Alu-clad Wood Window",
       "version": "V2",
-      "amount": 124247,
-      "amountRaw": "$124,247",
+      "amount": 106247,
+      "amountRaw": "$106,247",
       "paid": null,
       "reportedUnpaid": null,
-      "logistics": null,
+      "logistics": 18000,
       "date": "2026-08-03",
       "dateRaw": "3 Aug, 2026",
       "attachment": "V2-14821 Sunset-Window Quote-SPROC-20260803.pdf",
@@ -1395,7 +1535,7 @@
       "id": "14821 Sunset|Alu-clad Wood Window",
       "history": [
         {
-          "sourceRow": 38,
+          "sourceRow": 42,
           "project": "14821 Sunset",
           "supplier": "Luvindow(Shandong Doorwin)",
           "item": "Alu-clad Wood Window",
@@ -1438,7 +1578,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 39,
+      "sourceRow": 43,
       "project": "625 N. Palmera",
       "supplier": "Ferro/Luvindow/Derchi",
       "item": "Steel Window & Alu-clad wood window",
@@ -1447,7 +1587,7 @@
       "amountRaw": "$151,081",
       "paid": null,
       "reportedUnpaid": null,
-      "logistics": null,
+      "logistics": 18600,
       "date": "2026-08-05",
       "dateRaw": "5 Aug, 2026",
       "attachment": "V1-625 N. Palmera-Window Quote-SPROC-20260804.pdf",
@@ -1480,16 +1620,16 @@
       "urgent": false
     },
     {
-      "sourceRow": 40,
+      "sourceRow": 44,
       "project": "1014 Galloway",
       "supplier": "Derchi",
       "item": "Alu Window",
       "version": "V1",
-      "amount": 59524,
-      "amountRaw": "$59,524",
+      "amount": 45524,
+      "amountRaw": "$45,524",
       "paid": null,
       "reportedUnpaid": null,
-      "logistics": null,
+      "logistics": 14000,
       "date": "2026-08-06",
       "dateRaw": "6 Aug, 2026",
       "attachment": "V1-1014 -Window Quote-SPROC-2026.8.6.pdf",
@@ -1522,49 +1662,84 @@
       "urgent": false
     },
     {
-      "sourceRow": 41,
+      "sourceRow": 45,
       "project": "940 Bienveneda",
       "supplier": "MantianStar",
       "item": "Office Trailer",
-      "version": "V1",
-      "amount": 38601,
-      "amountRaw": "$38,601",
-      "paid": null,
-      "reportedUnpaid": null,
-      "logistics": null,
+      "version": "V2",
+      "amount": 70123,
+      "amountRaw": "$70,123",
+      "paid": 7012,
+      "reportedUnpaid": 63111,
+      "logistics": 33000,
       "date": "2026-08-10",
       "dateRaw": "10 Aug, 2026",
-      "attachment": "V1-940 Bienveneda Office Trailer02-SPROC-Quotes(2026.8.10).pdf",
+      "attachment": "V2-940 Bienveneda Office Trailer02-SPROC-Quotes 10 Sep 2026.pdf",
       "priority": "Normal",
       "nextAction": "",
       "contract": "",
-      "paymentStage": "",
-      "drawing": "",
+      "paymentStage": "Pay-to 10%",
+      "drawing": "Drafting",
       "production": "",
       "leadDays": "45",
       "shipping": null,
       "arrival": null,
       "actualArrival": null,
       "notes": [
-        "Cumulative actual payment is missing; blank is not treated as zero."
+        "Different amounts share the same quote date. Source order is provisional; the amount is excluded pending review."
       ],
-      "paidSource": null,
-      "targetPct": null,
+      "paidSource": "Paid column",
+      "targetPct": 10,
       "group": "Office Trailer",
       "isVO": false,
       "id": "940 Bienveneda|Office Trailer",
-      "history": [],
-      "historyCount": 0,
+      "history": [
+        {
+          "sourceRow": 46,
+          "project": "940 Bienveneda",
+          "supplier": "MantianStar",
+          "item": "Office Trailer",
+          "version": "V1",
+          "amount": 27601,
+          "amountRaw": "$27,601",
+          "paid": null,
+          "reportedUnpaid": null,
+          "logistics": 11000,
+          "date": "2026-08-10",
+          "dateRaw": "10 Aug, 2026",
+          "attachment": "V1-940 Bienveneda Office Trailer02-SPROC-Quotes(2026.8.10).pdf",
+          "priority": "Normal",
+          "nextAction": "",
+          "contract": "",
+          "paymentStage": "",
+          "drawing": "",
+          "production": "",
+          "leadDays": "45",
+          "shipping": null,
+          "arrival": null,
+          "actualArrival": null,
+          "notes": [
+            "Cumulative actual payment is missing; blank is not treated as zero."
+          ],
+          "paidSource": null,
+          "targetPct": null,
+          "group": "Office Trailer",
+          "isVO": false,
+          "id": "940 Bienveneda|Office Trailer"
+        }
+      ],
+      "historyCount": 1,
+      "excludeAmount": true,
       "excluded": false,
-      "included": true,
+      "included": false,
       "remaining": null,
       "target": null,
       "currentDue": null,
-      "stage": "Quote / Contracting",
+      "stage": "Shop drawings",
       "urgent": false
     },
     {
-      "sourceRow": 42,
+      "sourceRow": 47,
       "project": "15871 Asilomar",
       "supplier": "Derchi",
       "item": "Alu Window",
@@ -1606,16 +1781,16 @@
       "urgent": false
     },
     {
-      "sourceRow": 43,
+      "sourceRow": 48,
       "project": "18400 Coastline",
       "supplier": "Ferro/\nDerchi",
       "item": "Steel/Alu Window",
       "version": "V1",
       "amount": null,
-      "amountRaw": "$123,070\n$389,988\n$306,079",
+      "amountRaw": "$105,070\n$371,988\n$288,079",
       "paid": null,
       "reportedUnpaid": null,
-      "logistics": null,
+      "logistics": 18000,
       "date": "2026-06-03",
       "dateRaw": "3 Jun, 2026",
       "attachment": "V1_867 ILIFF ARCH Steel windows price comparison-20260603(FERRO和Derchi).pdf",
@@ -1623,7 +1798,7 @@
       "nextAction": "",
       "contract": "",
       "paymentStage": "",
-      "drawing": "",
+      "drawing": "Drafting",
       "production": "",
       "leadDays": "90",
       "shipping": null,
@@ -1646,20 +1821,20 @@
       "remaining": null,
       "target": null,
       "currentDue": null,
-      "stage": "Quote / Contracting",
+      "stage": "Shop drawings",
       "urgent": false
     },
     {
-      "sourceRow": 44,
+      "sourceRow": 49,
       "project": "946 Bienveneda",
       "supplier": "Derchi",
       "item": "Alu Window",
       "version": "V1",
-      "amount": 59045,
-      "amountRaw": "$59,045",
+      "amount": 44045,
+      "amountRaw": "$44,045",
       "paid": null,
       "reportedUnpaid": null,
-      "logistics": null,
+      "logistics": 15000,
       "date": "2026-09-23",
       "dateRaw": "23 Sep, 2026",
       "attachment": "V1-946 Bienveneda Window Quote-SPROC_Sep-2026.pdf",
@@ -1668,14 +1843,13 @@
       "contract": "",
       "paymentStage": "",
       "drawing": "",
-      "production": "60",
-      "leadDays": "",
+      "production": "",
+      "leadDays": "60",
       "shipping": null,
       "arrival": null,
       "actualArrival": null,
       "notes": [
-        "Cumulative actual payment is missing; blank is not treated as zero.",
-        "Unrecognized production value: 60. Check whether lead time was entered in the wrong column."
+        "Cumulative actual payment is missing; blank is not treated as zero."
       ],
       "paidSource": null,
       "targetPct": null,
@@ -1693,7 +1867,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 45,
+      "sourceRow": 50,
       "project": "15444 Albright",
       "supplier": "North",
       "item": "Alu Window",
@@ -1702,7 +1876,7 @@
       "amountRaw": "$111,859",
       "paid": null,
       "reportedUnpaid": null,
-      "logistics": null,
+      "logistics": 18000,
       "date": "2026-09-24",
       "dateRaw": "24 Sep, 2026",
       "attachment": "V1-15444 Albright Window Quote-SPROC_23-Sep-2026.pdf",
@@ -1711,14 +1885,13 @@
       "contract": "",
       "paymentStage": "",
       "drawing": "",
-      "production": "60",
-      "leadDays": "",
+      "production": "",
+      "leadDays": "60",
       "shipping": null,
       "arrival": null,
       "actualArrival": null,
       "notes": [
-        "Cumulative actual payment is missing; blank is not treated as zero.",
-        "Unrecognized production value: 60. Check whether lead time was entered in the wrong column."
+        "Cumulative actual payment is missing; blank is not treated as zero."
       ],
       "paidSource": null,
       "targetPct": null,
@@ -1736,22 +1909,389 @@
       "urgent": false
     }
   ],
-  "historyRows": 16,
+  "historyRows": 19,
   "summary": {
     "projects": 20,
-    "items": 23,
-    "amount": 2040744,
-    "unpriced": 3,
-    "paid": 5000,
-    "paidKnown": 1,
-    "paidUnknown": 22,
-    "remaining": 79387,
-    "remainingKnown": 1,
-    "target": 116894.9,
+    "items": 25,
+    "amount": 1866211,
+    "unpriced": 5,
+    "paid": 243897.6,
+    "paidKnown": 11,
+    "paidUnknown": 14,
+    "remaining": 376594.6,
+    "remainingKnown": 8,
+    "target": 218965.1,
     "targetKnown": 7,
-    "currentDue": 0,
-    "dueKnown": 0,
-    "urgent": 7
+    "currentDue": 0.2,
+    "dueKnown": 7,
+    "urgent": 6
   },
-  "changes": []
+  "changes": [
+    {
+      "project": "927 Bienveneda",
+      "item": "Alu Window/Door",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "paid",
+          "before": null,
+          "after": 64530
+        },
+        {
+          "key": "paymentStage",
+          "before": "Pay-to 60%",
+          "after": "Pay-to 100%"
+        },
+        {
+          "key": "logistics",
+          "before": null,
+          "after": 18000
+        }
+      ]
+    },
+    {
+      "project": "933 Bienveneda",
+      "item": "Window/Door package",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "amount",
+          "before": 191704,
+          "after": 176704
+        },
+        {
+          "key": "paid",
+          "before": null,
+          "after": 17670.4
+        },
+        {
+          "key": "logistics",
+          "before": null,
+          "after": 15000
+        }
+      ]
+    },
+    {
+      "project": "949 Bienveneda",
+      "item": "Alu Window",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "paid",
+          "before": null,
+          "after": 7925
+        },
+        {
+          "key": "drawing",
+          "before": "",
+          "after": "Drafting"
+        },
+        {
+          "key": "logistics",
+          "before": null,
+          "after": 15000
+        }
+      ]
+    },
+    {
+      "project": "16616 Bienveneda",
+      "item": "Garage Door",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "paid",
+          "before": null,
+          "after": 9529.2
+        }
+      ]
+    },
+    {
+      "project": "16616 Bienveneda",
+      "item": "Cabinet",
+      "kind": "Added",
+      "fields": []
+    },
+    {
+      "project": "16620 Bienveneda",
+      "item": "Alu Window",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "amount",
+          "before": 84387,
+          "after": 66387
+        },
+        {
+          "key": "logistics",
+          "before": null,
+          "after": 18000
+        }
+      ]
+    },
+    {
+      "project": "14221 Evans",
+      "item": "Steel Window · VO",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "paid",
+          "before": null,
+          "after": 5692
+        },
+        {
+          "key": "paymentStage",
+          "before": "",
+          "after": "Pay-to 100%"
+        }
+      ]
+    },
+    {
+      "project": "14221 Evans",
+      "item": "Steel Window",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "paid",
+          "before": null,
+          "after": 46647
+        },
+        {
+          "key": "paymentStage",
+          "before": "Pay-to 50%",
+          "after": "Pay-to 100%"
+        }
+      ]
+    },
+    {
+      "project": "14833 Sunset",
+      "item": "Alu Window",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "amount",
+          "before": 45296,
+          "after": 22618
+        },
+        {
+          "key": "nextAction",
+          "before": "WT-150",
+          "after": "prepayment+shop drawing"
+        },
+        {
+          "key": "logistics",
+          "before": null,
+          "after": 15000
+        }
+      ]
+    },
+    {
+      "project": "641 Alma",
+      "item": "Steel Doors,\nAlu-clad Wood window,\nInterior Doors,\nGarage Doors",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "logistics",
+          "before": null,
+          "after": 18000
+        }
+      ]
+    },
+    {
+      "project": "3250 Serra",
+      "item": "Cabinet",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "amount",
+          "before": 73013,
+          "after": 72283
+        },
+        {
+          "key": "paid",
+          "before": null,
+          "after": 7228
+        },
+        {
+          "key": "logistics",
+          "before": null,
+          "after": 18000
+        }
+      ]
+    },
+    {
+      "project": "629 Erskine",
+      "item": "Staircase",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "amount",
+          "before": 65944,
+          "after": 47944
+        },
+        {
+          "key": "logistics",
+          "before": null,
+          "after": 18000
+        }
+      ]
+    },
+    {
+      "project": "867 ILIFF",
+      "item": "Stone",
+      "kind": "Added",
+      "fields": []
+    },
+    {
+      "project": "867 ILIFF",
+      "item": "Steel/Alu Window",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "amount",
+          "before": 109282,
+          "after": 94282
+        },
+        {
+          "key": "paid",
+          "before": null,
+          "after": 9428
+        }
+      ]
+    },
+    {
+      "project": "14821 Sunset",
+      "item": "Alu-clad Wood Window",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "amount",
+          "before": 124247,
+          "after": 106247
+        },
+        {
+          "key": "logistics",
+          "before": null,
+          "after": 18000
+        }
+      ]
+    },
+    {
+      "project": "625 N. Palmera",
+      "item": "Steel Window & Alu-clad wood window",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "logistics",
+          "before": null,
+          "after": 18600
+        }
+      ]
+    },
+    {
+      "project": "1014 Galloway",
+      "item": "Alu Window",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "amount",
+          "before": 59524,
+          "after": 45524
+        },
+        {
+          "key": "logistics",
+          "before": null,
+          "after": 14000
+        }
+      ]
+    },
+    {
+      "project": "940 Bienveneda",
+      "item": "Office Trailer",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "amount",
+          "before": 38601,
+          "after": 70123
+        },
+        {
+          "key": "paid",
+          "before": null,
+          "after": 7012
+        },
+        {
+          "key": "drawing",
+          "before": "",
+          "after": "Drafting"
+        },
+        {
+          "key": "paymentStage",
+          "before": "",
+          "after": "Pay-to 10%"
+        },
+        {
+          "key": "logistics",
+          "before": null,
+          "after": 33000
+        }
+      ]
+    },
+    {
+      "project": "18400 Coastline",
+      "item": "Steel/Alu Window",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "drawing",
+          "before": "",
+          "after": "Drafting"
+        },
+        {
+          "key": "logistics",
+          "before": null,
+          "after": 18000
+        }
+      ]
+    },
+    {
+      "project": "946 Bienveneda",
+      "item": "Alu Window",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "amount",
+          "before": 59045,
+          "after": 44045
+        },
+        {
+          "key": "production",
+          "before": "60",
+          "after": ""
+        },
+        {
+          "key": "logistics",
+          "before": null,
+          "after": 15000
+        }
+      ]
+    },
+    {
+      "project": "15444 Albright",
+      "item": "Alu Window",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "production",
+          "before": "60",
+          "after": ""
+        },
+        {
+          "key": "logistics",
+          "before": null,
+          "after": 18000
+        }
+      ]
+    }
+  ],
+  "previousAt": "2026-09-25T08:37:05.386Z"
 }

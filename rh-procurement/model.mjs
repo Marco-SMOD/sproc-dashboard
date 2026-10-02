@@ -15,6 +15,12 @@ export function dateISO(v) {
 }
 const text=v=>String(v??'').trim();
 export function normalize(source,rules) {
+  const canonical=['Project','Supplier','Item','Version','Product Amount','Paid','To be Paid','Logistics Fee','Date','Quote Attachment','Priority Level','Next Action','Contract Status','Payment Status','Shop-Drawing Status','Production Status','Lead Time\n(days)','Estimated Shipping Date','Estimate Arrival Date','Actual Arrival Date'];
+  const aliases={'Product Amount':['Product Amount','Product Amount (EXW)'],'Logistics Fee':['Logistics Fee','Shipping Cost'],'Date':['Date','Quote Date']};
+  const original=source.values[0];
+  const indices=canonical.map(h=>{const matches=original.map((v,i)=>(aliases[h]||[h]).includes(v)?i:-1).filter(i=>i>=0);if(matches.length!==1)throw new Error('Missing or duplicate source header: '+h);return matches[0];});
+  const extra=original.map((h,i)=>i).filter(i=>!indices.includes(i));
+  source={...source,values:[canonical.concat(extra.map(i=>original[i])),...source.values.slice(1).map(row=>indices.concat(extra).map(i=>row[i]??null))]};
   const headers=source.values[0], rows=[]; let project='';
   for(let i=1;i<source.values.length;i++) {
     const a=source.values[i]; if(!a?.some(v=>v!==null&&v!=='')) continue;
