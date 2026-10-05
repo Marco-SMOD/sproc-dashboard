@@ -404,5 +404,25 @@
         ]
       }
     ]
+  },
+  {
+    "fetchedAt": "2026-10-05T01:18:03.320Z",
+    "summary": {
+      "projects": 20,
+      "items": 25,
+      "amount": 1866211,
+      "unpriced": 5,
+      "paid": 243897.6,
+      "paidKnown": 11,
+      "paidUnknown": 14,
+      "remaining": 376594.6,
+      "remainingKnown": 8,
+      "target": 218965.1,
+      "targetKnown": 7,
+      "currentDue": 0.2,
+      "dueKnown": 7,
+      "urgent": 6
+    },
+    "changes": []
   }
 ]
