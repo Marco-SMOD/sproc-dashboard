@@ -424,5 +424,280 @@
       "urgent": 6
     },
     "changes": []
+  },
+  {
+    "fetchedAt": "2026-10-12T01:01:46.794Z",
+    "summary": {
+      "projects": 20,
+      "items": 27,
+      "amount": 2171898,
+      "unpriced": 4,
+      "paid": 250953.6,
+      "paidKnown": 13,
+      "paidUnknown": 14,
+      "remaining": 505155.6,
+      "remainingKnown": 11,
+      "target": 233249.6,
+      "targetKnown": 10,
+      "currentDue": 0.9,
+      "dueKnown": 10,
+      "urgent": 6
+    },
+    "changes": [
+      {
+        "project": "927 Bienveneda",
+        "item": "Alu Window/Door",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "production",
+            "before": "Rectifying",
+            "after": "Completed"
+          },
+          {
+            "key": "shipping",
+            "before": null,
+            "after": "2026-10-18"
+          },
+          {
+            "key": "arrival",
+            "before": null,
+            "after": "2026-11-03"
+          }
+        ]
+      },
+      {
+        "project": "933 Bienveneda",
+        "item": "Window/Door package",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "nextAction",
+            "before": "Shop drawing, WT-150",
+            "after": "Shop drawing Under Reviewing"
+          }
+        ]
+      },
+      {
+        "project": "16616 Bienveneda",
+        "item": "Garage Door",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "nextAction",
+            "before": "Shipment",
+            "after": "Installation"
+          }
+        ]
+      },
+      {
+        "project": "16616 Bienveneda",
+        "item": "Cabinet",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "nextAction",
+            "before": "Shipment",
+            "after": "Installation"
+          }
+        ]
+      },
+      {
+        "project": "16620 Bienveneda",
+        "item": "Alu Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "production",
+            "before": "",
+            "after": "Under Production"
+          },
+          {
+            "key": "nextAction",
+            "before": "production prepayment application",
+            "after": "Production"
+          },
+          {
+            "key": "shipping",
+            "before": null,
+            "after": "2026-12-15"
+          }
+        ]
+      },
+      {
+        "project": "1202 Rimmer",
+        "item": "Steel Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "nextAction",
+            "before": "",
+            "after": "Pricing with Ferro"
+          }
+        ]
+      },
+      {
+        "project": "14221 Evans",
+        "item": "Steel Window · VO",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "shipping",
+            "before": null,
+            "after": "2026-10-18"
+          },
+          {
+            "key": "arrival",
+            "before": null,
+            "after": "2026-11-03"
+          }
+        ]
+      },
+      {
+        "project": "14833 Sunset",
+        "item": "Alu Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "paid",
+            "before": null,
+            "after": 2262
+          },
+          {
+            "key": "paymentStage",
+            "before": "",
+            "after": "Pay-to 10%"
+          },
+          {
+            "key": "nextAction",
+            "before": "prepayment+shop drawing",
+            "after": "Shop drawing"
+          }
+        ]
+      },
+      {
+        "project": "641 Alma",
+        "item": "Steel Doors,\nAlu-clad Wood window,\nInterior Doors,\nGarage Doors",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "nextAction",
+            "before": "",
+            "after": "Updating Proposal (Luvindow)"
+          }
+        ]
+      },
+      {
+        "project": "3250 Seirra",
+        "item": "Cabinet",
+        "kind": "Added",
+        "fields": []
+      },
+      {
+        "project": "629 Erskine",
+        "item": "Staircase",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "paid",
+            "before": null,
+            "after": 4794
+          },
+          {
+            "key": "contract",
+            "before": "",
+            "after": "Preparing"
+          },
+          {
+            "key": "paymentStage",
+            "before": "",
+            "after": "Pay-to 10%"
+          },
+          {
+            "key": "nextAction",
+            "before": "prepayment+shop drawing",
+            "after": "Shop drawing, in-person meeting with Paul"
+          }
+        ]
+      },
+      {
+        "project": "629 Erskine",
+        "item": "Alu Window(slim)",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "amount",
+            "before": null,
+            "after": 162911
+          }
+        ]
+      },
+      {
+        "project": "867 ILIFF",
+        "item": "Steel/Alu Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "nextAction",
+            "before": "Shop drawing",
+            "after": "Shop drawing Under Revising"
+          }
+        ]
+      },
+      {
+        "project": "867 ILIFF",
+        "item": "Millwork",
+        "kind": "Added",
+        "fields": []
+      },
+      {
+        "project": "940 Bienveneda",
+        "item": "T7 Capsule House",
+        "kind": "Added",
+        "fields": []
+      },
+      {
+        "project": "940 Bienveneda",
+        "item": "T5 Office Trailer",
+        "kind": "Added",
+        "fields": []
+      },
+      {
+        "project": "927 Bienveneda",
+        "item": "Design Service",
+        "kind": "Removed from source",
+        "fields": []
+      },
+      {
+        "project": "16616 Bienveneda",
+        "item": "Alu-clad Wood window",
+        "kind": "Removed from source",
+        "fields": []
+      },
+      {
+        "project": "16616 Bienveneda",
+        "item": "Finishes",
+        "kind": "Removed from source",
+        "fields": []
+      },
+      {
+        "project": "16616 Bienveneda",
+        "item": "Plumbing Fixture",
+        "kind": "Removed from source",
+        "fields": []
+      },
+      {
+        "project": "3250 Serra",
+        "item": "Cabinet",
+        "kind": "Removed from source",
+        "fields": []
+      },
+      {
+        "project": "3250 Serra",
+        "item": "Wall Panel",
+        "kind": "Removed from source",
+        "fields": []
+      }
+    ]
   }
 ]
