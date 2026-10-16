@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-10-12T01:01:46.794Z",
+  "fetchedAt": "2026-10-16T13:09:38.992Z",
   "sourceUrl": "https://docs.google.com/spreadsheets/d/15y-Yj0r4saG3KJefyCQuuOI7K0d3mGynF7iljSQo7vY/edit?gid=1353027088#gid=1353027088",
-  "sourceRows": 38,
+  "sourceRows": 40,
   "currency": "USD",
   "currencyNote": "Amounts follow the source $ / USD notation and are treated as USD; no currency conversion is applied.",
   "latest": [
@@ -50,47 +50,118 @@
     {
       "sourceRow": 3,
       "project": "933 Bienveneda",
-      "supplier": "Derchi/Ferro",
+      "supplier": "Alu/ Steel Window/Door",
       "item": "Alu/ Steel Window/Door",
-      "version": "V8",
-      "amount": 176704,
-      "amountRaw": "$176,704",
-      "paid": 17670.4,
-      "reportedUnpaid": 159034,
+      "version": "V10",
+      "amount": 153857,
+      "amountRaw": "$153,857",
+      "paid": null,
+      "reportedUnpaid": null,
       "logistics": 15000,
-      "date": "2026-09-11",
-      "dateRaw": "11 Sep, 2026",
-      "attachment": "V8-933 Bienveneda Alu& Steel Window Quote-SPROC_Sep 11 2026.pdf",
-      "priority": "High",
-      "nextAction": "Shop drawing Under Reviewing",
-      "contract": "Preparing",
-      "paymentStage": "Pay-to 10%",
-      "drawing": "Drafting",
+      "date": "2026-10-13",
+      "dateRaw": "13 Oct, 2026",
+      "attachment": "V10-933 Bienveneda Alu& Steel Window Quote-SPROC_Oct 13 2026.pdf",
+      "priority": "Urgent",
+      "nextAction": "Confirm proposal",
+      "contract": "",
+      "paymentStage": "",
+      "drawing": "Updating",
       "production": "",
-      "leadDays": "60",
+      "leadDays": "90",
       "shipping": null,
       "arrival": null,
       "actualArrival": null,
       "notes": [
-        "The latest Derchi package may overlap the Ferro steel-window option. They are provisionally grouped; confirm whether steel windows are an additional purchase."
+        "The latest Derchi package may overlap the Ferro steel-window option. They are provisionally grouped; confirm whether steel windows are an additional purchase.",
+        "Cumulative actual payment is missing; blank is not treated as zero.",
+        "Different amounts share the same quote date. Source order is provisional; the amount is excluded pending review."
       ],
-      "paidSource": "Paid column",
-      "targetPct": 10,
+      "paidSource": null,
+      "targetPct": null,
       "group": "Window/Door package",
       "isVO": false,
       "id": "933 Bienveneda|Window/Door package",
-      "history": [],
-      "historyCount": 0,
+      "history": [
+        {
+          "sourceRow": 4,
+          "project": "933 Bienveneda",
+          "supplier": "Alu Window/Door",
+          "item": "Alu Window/Door",
+          "version": "V9",
+          "amount": 69101,
+          "amountRaw": "$69,101",
+          "paid": null,
+          "reportedUnpaid": null,
+          "logistics": 15000,
+          "date": "2026-10-13",
+          "dateRaw": "13 Oct, 2026",
+          "attachment": "V9-933 Bienveneda All Alu Window Quote-SPROC_Oct 13 2026.pdf",
+          "priority": "Urgent",
+          "nextAction": "Confirm proposal",
+          "contract": "",
+          "paymentStage": "",
+          "drawing": "Updating",
+          "production": "",
+          "leadDays": "60",
+          "shipping": null,
+          "arrival": null,
+          "actualArrival": null,
+          "notes": [
+            "The latest Derchi package may overlap the Ferro steel-window option. They are provisionally grouped; confirm whether steel windows are an additional purchase.",
+            "Cumulative actual payment is missing; blank is not treated as zero."
+          ],
+          "paidSource": null,
+          "targetPct": null,
+          "group": "Window/Door package",
+          "isVO": false,
+          "id": "933 Bienveneda|Window/Door package"
+        },
+        {
+          "sourceRow": 5,
+          "project": "933 Bienveneda",
+          "supplier": "Derchi/Ferro",
+          "item": "Alu/ Steel Window/Door",
+          "version": "V8",
+          "amount": 176704,
+          "amountRaw": "$176,704",
+          "paid": 17670.4,
+          "reportedUnpaid": 159034,
+          "logistics": 15000,
+          "date": "2026-09-11",
+          "dateRaw": "11 Sep, 2026",
+          "attachment": "V8-933 Bienveneda Alu& Steel Window Quote-SPROC_Sep 11 2026.pdf",
+          "priority": "High",
+          "nextAction": "Shop drawing Under Reviewing",
+          "contract": "Preparing",
+          "paymentStage": "Pay-to 10%",
+          "drawing": "Drafting",
+          "production": "",
+          "leadDays": "60",
+          "shipping": null,
+          "arrival": null,
+          "actualArrival": null,
+          "notes": [
+            "The latest Derchi package may overlap the Ferro steel-window option. They are provisionally grouped; confirm whether steel windows are an additional purchase."
+          ],
+          "paidSource": "Paid column",
+          "targetPct": 10,
+          "group": "Window/Door package",
+          "isVO": false,
+          "id": "933 Bienveneda|Window/Door package"
+        }
+      ],
+      "historyCount": 2,
+      "excludeAmount": true,
       "excluded": false,
-      "included": true,
-      "remaining": 159033.6,
-      "target": 17670.4,
-      "currentDue": 0,
+      "included": false,
+      "remaining": null,
+      "target": null,
+      "currentDue": null,
       "stage": "Shop drawings",
-      "urgent": false
+      "urgent": true
     },
     {
-      "sourceRow": 4,
+      "sourceRow": 6,
       "project": "949 Bienveneda",
       "supplier": "Derchi",
       "item": "Alu Window",
@@ -130,7 +201,7 @@
       "urgent": true
     },
     {
-      "sourceRow": 5,
+      "sourceRow": 7,
       "project": "16616 Bienveneda",
       "supplier": "Derchi",
       "item": "Garage Door",
@@ -163,7 +234,7 @@
       "id": "16616 Bienveneda|Garage Door",
       "history": [
         {
-          "sourceRow": 6,
+          "sourceRow": 8,
           "project": "16616 Bienveneda",
           "supplier": "Derchi",
           "item": "Garage Door",
@@ -206,7 +277,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 7,
+      "sourceRow": 9,
       "project": "16616 Bienveneda",
       "supplier": "Yugang",
       "item": "Cabinet",
@@ -246,7 +317,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 8,
+      "sourceRow": 10,
       "project": "16620 Bienveneda",
       "supplier": "Derchi",
       "item": "Alu Window",
@@ -279,7 +350,7 @@
       "id": "16620 Bienveneda|Alu Window",
       "history": [
         {
-          "sourceRow": 9,
+          "sourceRow": 11,
           "project": "16620 Bienveneda",
           "supplier": "Derchi",
           "item": "Alu Window",
@@ -322,7 +393,7 @@
       "urgent": true
     },
     {
-      "sourceRow": 10,
+      "sourceRow": 12,
       "project": "16620 Bienveneda",
       "supplier": "Modomade",
       "item": "Design Service",
@@ -355,7 +426,7 @@
       "id": "16620 Bienveneda|Design Service",
       "history": [
         {
-          "sourceRow": 11,
+          "sourceRow": 13,
           "project": "16620 Bienveneda",
           "supplier": "Modomade",
           "item": "Design Service",
@@ -398,7 +469,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 12,
+      "sourceRow": 14,
       "project": "1202 Rimmer",
       "supplier": "Pan Steel",
       "item": "Steel Window",
@@ -440,7 +511,7 @@
       "urgent": true
     },
     {
-      "sourceRow": 13,
+      "sourceRow": 15,
       "project": "14221 Evans",
       "supplier": "Ferro",
       "item": "Steel Window",
@@ -483,7 +554,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 14,
+      "sourceRow": 16,
       "project": "14221 Evans",
       "supplier": "Ferro",
       "item": "Steel Window",
@@ -514,7 +585,7 @@
       "id": "14221 Evans|Steel Window",
       "history": [
         {
-          "sourceRow": 15,
+          "sourceRow": 17,
           "project": "14221 Evans",
           "supplier": "Ferro",
           "item": "Steel Window",
@@ -557,7 +628,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 16,
+      "sourceRow": 18,
       "project": "14833 Sunset",
       "supplier": "Derchi",
       "item": "Alu Window",
@@ -588,7 +659,7 @@
       "id": "14833 Sunset|Alu Window",
       "history": [
         {
-          "sourceRow": 17,
+          "sourceRow": 19,
           "project": "14833 Sunset",
           "supplier": "Derchi",
           "item": "Alu Window",
@@ -621,7 +692,7 @@
           "id": "14833 Sunset|Alu Window"
         },
         {
-          "sourceRow": 18,
+          "sourceRow": 20,
           "project": "14833 Sunset",
           "supplier": "Derchi",
           "item": "Alu Window",
@@ -664,7 +735,7 @@
       "urgent": true
     },
     {
-      "sourceRow": 19,
+      "sourceRow": 21,
       "project": "641 Alma",
       "supplier": "Ferro/\nLuvindow/\nForest Bright/\nDerchi",
       "item": "Steel Doors,\nAlu-clad Wood window,\nInterior Doors,\nGarage Doors",
@@ -706,7 +777,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 20,
+      "sourceRow": 22,
       "project": "3250 Seirra",
       "supplier": "Yugang",
       "item": "Cabinet",
@@ -746,7 +817,7 @@
       "urgent": true
     },
     {
-      "sourceRow": 21,
+      "sourceRow": 23,
       "project": "629 Erskine",
       "supplier": "Shangbu",
       "item": "Staircase",
@@ -786,7 +857,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 22,
+      "sourceRow": 24,
       "project": "629 Erskine",
       "supplier": "Derchi/\nNorth Window",
       "item": "Alu Window(slim)",
@@ -819,7 +890,7 @@
       "id": "629 Erskine|Alu Window(slim)",
       "history": [
         {
-          "sourceRow": 23,
+          "sourceRow": 25,
           "project": "629 Erskine",
           "supplier": "OTIS",
           "item": "Alu Window(slim)",
@@ -863,7 +934,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 24,
+      "sourceRow": 26,
       "project": "867 ILIFF",
       "supplier": "Fujian Stone",
       "item": "Stone",
@@ -905,7 +976,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 25,
+      "sourceRow": 27,
       "project": "867 ILIFF",
       "supplier": "Ferro/\nDerchi",
       "item": "Steel/Alu Window",
@@ -945,7 +1016,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 26,
+      "sourceRow": 28,
       "project": "867 ILIFF",
       "supplier": "",
       "item": "Millwork",
@@ -989,7 +1060,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 27,
+      "sourceRow": 29,
       "project": "14821 Sunset",
       "supplier": "Luvindow(Shandong Doorwin)",
       "item": "Alu-clad Wood Window",
@@ -1022,7 +1093,7 @@
       "id": "14821 Sunset|Alu-clad Wood Window",
       "history": [
         {
-          "sourceRow": 28,
+          "sourceRow": 30,
           "project": "14821 Sunset",
           "supplier": "Luvindow(Shandong Doorwin)",
           "item": "Alu-clad Wood Window",
@@ -1065,7 +1136,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 29,
+      "sourceRow": 31,
       "project": "625 N. Palmera",
       "supplier": "Ferro/Luvindow/Derchi",
       "item": "Steel Window & Alu-clad wood window",
@@ -1107,7 +1178,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 30,
+      "sourceRow": 32,
       "project": "1014 Galloway",
       "supplier": "Derchi",
       "item": "Alu Window",
@@ -1149,7 +1220,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 31,
+      "sourceRow": 33,
       "project": "940 Bienveneda",
       "supplier": "MantianStar",
       "item": "T7 Capsule House",
@@ -1191,7 +1262,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 32,
+      "sourceRow": 34,
       "project": "940 Bienveneda",
       "supplier": "MantianStar",
       "item": "T5 Office Trailer",
@@ -1224,7 +1295,7 @@
       "id": "940 Bienveneda|T5 Office Trailer",
       "history": [
         {
-          "sourceRow": 33,
+          "sourceRow": 35,
           "project": "940 Bienveneda",
           "supplier": "MantianStar",
           "item": "T5 Office Trailer",
@@ -1267,7 +1338,7 @@
       "urgent": true
     },
     {
-      "sourceRow": 34,
+      "sourceRow": 36,
       "project": "940 Bienveneda",
       "supplier": "MantianStar",
       "item": "Office Trailer",
@@ -1300,7 +1371,7 @@
       "id": "940 Bienveneda|Office Trailer",
       "history": [
         {
-          "sourceRow": 35,
+          "sourceRow": 37,
           "project": "940 Bienveneda",
           "supplier": "MantianStar",
           "item": "Office Trailer",
@@ -1344,7 +1415,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 36,
+      "sourceRow": 38,
       "project": "15871 Asilomar",
       "supplier": "Derchi",
       "item": "Alu Window",
@@ -1386,7 +1457,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 37,
+      "sourceRow": 39,
       "project": "18400 Coastline",
       "supplier": "Ferro/\nDerchi",
       "item": "Steel/Alu Window",
@@ -1430,7 +1501,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 38,
+      "sourceRow": 40,
       "project": "946 Bienveneda",
       "supplier": "Derchi",
       "item": "Alu Window",
@@ -1472,7 +1543,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 39,
+      "sourceRow": 41,
       "project": "15444 Albright",
       "supplier": "North",
       "item": "Alu Window",
@@ -1514,278 +1585,61 @@
       "urgent": false
     }
   ],
-  "historyRows": 10,
+  "historyRows": 12,
   "summary": {
     "projects": 20,
     "items": 27,
-    "amount": 2171898,
-    "unpriced": 4,
-    "paid": 250953.6,
-    "paidKnown": 13,
-    "paidUnknown": 14,
-    "remaining": 505155.6,
-    "remainingKnown": 11,
-    "target": 233249.6,
-    "targetKnown": 10,
+    "amount": 1995194,
+    "unpriced": 5,
+    "paid": 233283.2,
+    "paidKnown": 12,
+    "paidUnknown": 15,
+    "remaining": 346122,
+    "remainingKnown": 10,
+    "target": 215579.2,
+    "targetKnown": 9,
     "currentDue": 0.9,
-    "dueKnown": 10,
-    "urgent": 6
+    "dueKnown": 9,
+    "urgent": 7
   },
   "changes": [
-    {
-      "project": "927 Bienveneda",
-      "item": "Alu Window/Door",
-      "kind": "Updated",
-      "fields": [
-        {
-          "key": "production",
-          "before": "Rectifying",
-          "after": "Completed"
-        },
-        {
-          "key": "shipping",
-          "before": null,
-          "after": "2026-10-18"
-        },
-        {
-          "key": "arrival",
-          "before": null,
-          "after": "2026-11-03"
-        }
-      ]
-    },
     {
       "project": "933 Bienveneda",
       "item": "Window/Door package",
       "kind": "Updated",
       "fields": [
         {
-          "key": "nextAction",
-          "before": "Shop drawing, WT-150",
-          "after": "Shop drawing Under Reviewing"
-        }
-      ]
-    },
-    {
-      "project": "16616 Bienveneda",
-      "item": "Garage Door",
-      "kind": "Updated",
-      "fields": [
-        {
-          "key": "nextAction",
-          "before": "Shipment",
-          "after": "Installation"
-        }
-      ]
-    },
-    {
-      "project": "16616 Bienveneda",
-      "item": "Cabinet",
-      "kind": "Updated",
-      "fields": [
-        {
-          "key": "nextAction",
-          "before": "Shipment",
-          "after": "Installation"
-        }
-      ]
-    },
-    {
-      "project": "16620 Bienveneda",
-      "item": "Alu Window",
-      "kind": "Updated",
-      "fields": [
-        {
-          "key": "production",
-          "before": "",
-          "after": "Under Production"
+          "key": "amount",
+          "before": 176704,
+          "after": 153857
         },
-        {
-          "key": "nextAction",
-          "before": "production prepayment application",
-          "after": "Production"
-        },
-        {
-          "key": "shipping",
-          "before": null,
-          "after": "2026-12-15"
-        }
-      ]
-    },
-    {
-      "project": "1202 Rimmer",
-      "item": "Steel Window",
-      "kind": "Updated",
-      "fields": [
-        {
-          "key": "nextAction",
-          "before": "",
-          "after": "Pricing with Ferro"
-        }
-      ]
-    },
-    {
-      "project": "14221 Evans",
-      "item": "Steel Window · VO",
-      "kind": "Updated",
-      "fields": [
-        {
-          "key": "shipping",
-          "before": null,
-          "after": "2026-10-18"
-        },
-        {
-          "key": "arrival",
-          "before": null,
-          "after": "2026-11-03"
-        }
-      ]
-    },
-    {
-      "project": "14833 Sunset",
-      "item": "Alu Window",
-      "kind": "Updated",
-      "fields": [
         {
           "key": "paid",
-          "before": null,
-          "after": 2262
-        },
-        {
-          "key": "paymentStage",
-          "before": "",
-          "after": "Pay-to 10%"
-        },
-        {
-          "key": "nextAction",
-          "before": "prepayment+shop drawing",
-          "after": "Shop drawing"
-        }
-      ]
-    },
-    {
-      "project": "641 Alma",
-      "item": "Steel Doors,\nAlu-clad Wood window,\nInterior Doors,\nGarage Doors",
-      "kind": "Updated",
-      "fields": [
-        {
-          "key": "nextAction",
-          "before": "",
-          "after": "Updating Proposal (Luvindow)"
-        }
-      ]
-    },
-    {
-      "project": "3250 Seirra",
-      "item": "Cabinet",
-      "kind": "Added",
-      "fields": []
-    },
-    {
-      "project": "629 Erskine",
-      "item": "Staircase",
-      "kind": "Updated",
-      "fields": [
-        {
-          "key": "paid",
-          "before": null,
-          "after": 4794
+          "before": 17670.4,
+          "after": null
         },
         {
           "key": "contract",
-          "before": "",
-          "after": "Preparing"
+          "before": "Preparing",
+          "after": ""
+        },
+        {
+          "key": "drawing",
+          "before": "Drafting",
+          "after": "Updating"
         },
         {
           "key": "paymentStage",
-          "before": "",
-          "after": "Pay-to 10%"
+          "before": "Pay-to 10%",
+          "after": ""
         },
         {
           "key": "nextAction",
-          "before": "prepayment+shop drawing",
-          "after": "Shop drawing, in-person meeting with Paul"
+          "before": "Shop drawing Under Reviewing",
+          "after": "Confirm proposal"
         }
       ]
-    },
-    {
-      "project": "629 Erskine",
-      "item": "Alu Window(slim)",
-      "kind": "Updated",
-      "fields": [
-        {
-          "key": "amount",
-          "before": null,
-          "after": 162911
-        }
-      ]
-    },
-    {
-      "project": "867 ILIFF",
-      "item": "Steel/Alu Window",
-      "kind": "Updated",
-      "fields": [
-        {
-          "key": "nextAction",
-          "before": "Shop drawing",
-          "after": "Shop drawing Under Revising"
-        }
-      ]
-    },
-    {
-      "project": "867 ILIFF",
-      "item": "Millwork",
-      "kind": "Added",
-      "fields": []
-    },
-    {
-      "project": "940 Bienveneda",
-      "item": "T7 Capsule House",
-      "kind": "Added",
-      "fields": []
-    },
-    {
-      "project": "940 Bienveneda",
-      "item": "T5 Office Trailer",
-      "kind": "Added",
-      "fields": []
-    },
-    {
-      "project": "927 Bienveneda",
-      "item": "Design Service",
-      "kind": "Removed from source",
-      "fields": []
-    },
-    {
-      "project": "16616 Bienveneda",
-      "item": "Alu-clad Wood window",
-      "kind": "Removed from source",
-      "fields": []
-    },
-    {
-      "project": "16616 Bienveneda",
-      "item": "Finishes",
-      "kind": "Removed from source",
-      "fields": []
-    },
-    {
-      "project": "16616 Bienveneda",
-      "item": "Plumbing Fixture",
-      "kind": "Removed from source",
-      "fields": []
-    },
-    {
-      "project": "3250 Serra",
-      "item": "Cabinet",
-      "kind": "Removed from source",
-      "fields": []
-    },
-    {
-      "project": "3250 Serra",
-      "item": "Wall Panel",
-      "kind": "Removed from source",
-      "fields": []
     }
   ],
-  "previousAt": "2026-10-05T01:18:03.320Z"
+  "previousAt": "2026-10-12T01:01:46.794Z"
 }

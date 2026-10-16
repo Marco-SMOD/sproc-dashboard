@@ -699,5 +699,63 @@
         "fields": []
       }
     ]
+  },
+  {
+    "fetchedAt": "2026-10-16T13:09:38.992Z",
+    "summary": {
+      "projects": 20,
+      "items": 27,
+      "amount": 1995194,
+      "unpriced": 5,
+      "paid": 233283.2,
+      "paidKnown": 12,
+      "paidUnknown": 15,
+      "remaining": 346122,
+      "remainingKnown": 10,
+      "target": 215579.2,
+      "targetKnown": 9,
+      "currentDue": 0.9,
+      "dueKnown": 9,
+      "urgent": 7
+    },
+    "changes": [
+      {
+        "project": "933 Bienveneda",
+        "item": "Window/Door package",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "amount",
+            "before": 176704,
+            "after": 153857
+          },
+          {
+            "key": "paid",
+            "before": 17670.4,
+            "after": null
+          },
+          {
+            "key": "contract",
+            "before": "Preparing",
+            "after": ""
+          },
+          {
+            "key": "drawing",
+            "before": "Drafting",
+            "after": "Updating"
+          },
+          {
+            "key": "paymentStage",
+            "before": "Pay-to 10%",
+            "after": ""
+          },
+          {
+            "key": "nextAction",
+            "before": "Shop drawing Under Reviewing",
+            "after": "Confirm proposal"
+          }
+        ]
+      }
+    ]
   }
 ]
