@@ -757,5 +757,84 @@
         ]
       }
     ]
+  },
+  {
+    "fetchedAt": "2026-10-19T13:23:57.376Z",
+    "summary": {
+      "projects": 20,
+      "items": 27,
+      "amount": 1970252,
+      "unpriced": 5,
+      "paid": 261133.2,
+      "paidKnown": 13,
+      "paidUnknown": 14,
+      "remaining": 346122,
+      "remainingKnown": 11,
+      "target": 243429.2,
+      "targetKnown": 10,
+      "currentDue": 0.9,
+      "dueKnown": 10,
+      "urgent": 7
+    },
+    "changes": [
+      {
+        "project": "14833 Sunset",
+        "item": "Alu Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "drawing",
+            "before": "",
+            "after": "Under Reviewing"
+          }
+        ]
+      },
+      {
+        "project": "867 ILIFF",
+        "item": "Steel/Alu Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "drawing",
+            "before": "Drafting",
+            "after": "Updating"
+          }
+        ]
+      },
+      {
+        "project": "940 Bienveneda",
+        "item": "T7 Capsule House",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "amount",
+            "before": 49494,
+            "after": 24552
+          }
+        ]
+      },
+      {
+        "project": "940 Bienveneda",
+        "item": "T5 Office Trailer",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "paid",
+            "before": null,
+            "after": 27850
+          },
+          {
+            "key": "paymentStage",
+            "before": "",
+            "after": "Pay-to 100%"
+          },
+          {
+            "key": "nextAction",
+            "before": "",
+            "after": "remove the shower room and move the vanity in"
+          }
+        ]
+      }
+    ]
   }
 ]

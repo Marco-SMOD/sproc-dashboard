@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-10-16T13:09:38.992Z",
+  "fetchedAt": "2026-10-19T13:23:57.376Z",
   "sourceUrl": "https://docs.google.com/spreadsheets/d/15y-Yj0r4saG3KJefyCQuuOI7K0d3mGynF7iljSQo7vY/edit?gid=1353027088#gid=1353027088",
-  "sourceRows": 40,
+  "sourceRows": 41,
   "currency": "USD",
   "currencyNote": "Amounts follow the source $ / USD notation and are treated as USD; no currency conversion is applied.",
   "latest": [
@@ -645,7 +645,7 @@
       "nextAction": "Shop drawing",
       "contract": "",
       "paymentStage": "Pay-to 10%",
-      "drawing": "",
+      "drawing": "Under Reviewing",
       "production": "",
       "leadDays": "60",
       "shipping": null,
@@ -731,7 +731,7 @@
       "remaining": 20356,
       "target": 2261.8,
       "currentDue": 0,
-      "stage": "Quote / Contracting",
+      "stage": "Shop drawings",
       "urgent": true
     },
     {
@@ -993,7 +993,7 @@
       "nextAction": "Shop drawing Under Revising",
       "contract": "",
       "paymentStage": "Pay-to 10%",
-      "drawing": "Drafting",
+      "drawing": "Updating",
       "production": "",
       "leadDays": "90\n60",
       "shipping": null,
@@ -1224,22 +1224,22 @@
       "project": "940 Bienveneda",
       "supplier": "MantianStar",
       "item": "T7 Capsule House",
-      "version": "V1",
-      "amount": 49494,
-      "amountRaw": "$49,494",
+      "version": "V2",
+      "amount": 24552,
+      "amountRaw": "$24,552",
       "paid": null,
       "reportedUnpaid": null,
       "logistics": 15000,
-      "date": "2026-10-09",
-      "dateRaw": "9 Oct, 2026",
-      "attachment": "V1-T7-1_T7-2_SPROC-Quotes Oct 09 2026.pdf",
+      "date": "2026-10-16",
+      "dateRaw": "16 Oct, 2026",
+      "attachment": "V2-Capsule House T7-1_T7-2_T7-3_SPROC-Quotes Oct 16 2026.pdf",
       "priority": "Normal",
       "nextAction": "",
       "contract": "",
       "paymentStage": "",
       "drawing": "",
       "production": "",
-      "leadDays": "",
+      "leadDays": "45",
       "shipping": null,
       "arrival": null,
       "actualArrival": null,
@@ -1251,8 +1251,42 @@
       "group": "T7 Capsule House",
       "isVO": false,
       "id": "940 Bienveneda|T7 Capsule House",
-      "history": [],
-      "historyCount": 0,
+      "history": [
+        {
+          "sourceRow": 34,
+          "project": "940 Bienveneda",
+          "supplier": "MantianStar",
+          "item": "T7 Capsule House",
+          "version": "V1",
+          "amount": 49494,
+          "amountRaw": "$49,494",
+          "paid": null,
+          "reportedUnpaid": null,
+          "logistics": 15000,
+          "date": "2026-10-09",
+          "dateRaw": "9 Oct, 2026",
+          "attachment": "V1-T7-1_T7-2_SPROC-Quotes Oct 09 2026.pdf",
+          "priority": "Normal",
+          "nextAction": "",
+          "contract": "",
+          "paymentStage": "",
+          "drawing": "",
+          "production": "",
+          "leadDays": "",
+          "shipping": null,
+          "arrival": null,
+          "actualArrival": null,
+          "notes": [
+            "Cumulative actual payment is missing; blank is not treated as zero."
+          ],
+          "paidSource": null,
+          "targetPct": null,
+          "group": "T7 Capsule House",
+          "isVO": false,
+          "id": "940 Bienveneda|T7 Capsule House"
+        }
+      ],
+      "historyCount": 1,
       "excluded": false,
       "included": true,
       "remaining": null,
@@ -1262,40 +1296,38 @@
       "urgent": false
     },
     {
-      "sourceRow": 34,
+      "sourceRow": 35,
       "project": "940 Bienveneda",
       "supplier": "MantianStar",
       "item": "T5 Office Trailer",
       "version": "V2",
       "amount": 27850,
       "amountRaw": "$27,850",
-      "paid": null,
+      "paid": 27850,
       "reportedUnpaid": null,
       "logistics": 15000,
       "date": "2026-10-09",
       "dateRaw": "9 Oct, 2026",
       "attachment": "V2-940 Bienveneda Office Trailer-T5-SPROC-Quotes Oct 09 2026.pdf",
       "priority": "Urgent",
-      "nextAction": "",
+      "nextAction": "remove the shower room and move the vanity in",
       "contract": "",
-      "paymentStage": "",
+      "paymentStage": "Pay-to 100%",
       "drawing": "",
       "production": "",
-      "leadDays": "",
+      "leadDays": "10",
       "shipping": null,
       "arrival": null,
       "actualArrival": null,
-      "notes": [
-        "Cumulative actual payment is missing; blank is not treated as zero."
-      ],
-      "paidSource": null,
-      "targetPct": null,
+      "notes": [],
+      "paidSource": "Paid column",
+      "targetPct": 100,
       "group": "T5 Office Trailer",
       "isVO": false,
       "id": "940 Bienveneda|T5 Office Trailer",
       "history": [
         {
-          "sourceRow": 35,
+          "sourceRow": 36,
           "project": "940 Bienveneda",
           "supplier": "MantianStar",
           "item": "T5 Office Trailer",
@@ -1309,7 +1341,7 @@
           "dateRaw": "8 Oct, 2026",
           "attachment": "V1-940 Bienveneda Office Trailer-T5-SPROC-Quotes Oct 08 2026.pdf",
           "priority": "Urgent",
-          "nextAction": "Payment",
+          "nextAction": "",
           "contract": "",
           "paymentStage": "",
           "drawing": "",
@@ -1331,14 +1363,14 @@
       "historyCount": 1,
       "excluded": false,
       "included": true,
-      "remaining": null,
-      "target": null,
-      "currentDue": null,
+      "remaining": 0,
+      "target": 27850,
+      "currentDue": 0,
       "stage": "Quote / Contracting",
       "urgent": true
     },
     {
-      "sourceRow": 36,
+      "sourceRow": 37,
       "project": "940 Bienveneda",
       "supplier": "MantianStar",
       "item": "Office Trailer",
@@ -1371,7 +1403,7 @@
       "id": "940 Bienveneda|Office Trailer",
       "history": [
         {
-          "sourceRow": 37,
+          "sourceRow": 38,
           "project": "940 Bienveneda",
           "supplier": "MantianStar",
           "item": "Office Trailer",
@@ -1415,7 +1447,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 38,
+      "sourceRow": 39,
       "project": "15871 Asilomar",
       "supplier": "Derchi",
       "item": "Alu Window",
@@ -1457,7 +1489,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 39,
+      "sourceRow": 40,
       "project": "18400 Coastline",
       "supplier": "Ferro/\nDerchi",
       "item": "Steel/Alu Window",
@@ -1501,7 +1533,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 40,
+      "sourceRow": 41,
       "project": "946 Bienveneda",
       "supplier": "Derchi",
       "item": "Alu Window",
@@ -1543,7 +1575,7 @@
       "urgent": false
     },
     {
-      "sourceRow": 41,
+      "sourceRow": 42,
       "project": "15444 Albright",
       "supplier": "North",
       "item": "Alu Window",
@@ -1585,61 +1617,82 @@
       "urgent": false
     }
   ],
-  "historyRows": 12,
+  "historyRows": 13,
   "summary": {
     "projects": 20,
     "items": 27,
-    "amount": 1995194,
+    "amount": 1970252,
     "unpriced": 5,
-    "paid": 233283.2,
-    "paidKnown": 12,
-    "paidUnknown": 15,
+    "paid": 261133.2,
+    "paidKnown": 13,
+    "paidUnknown": 14,
     "remaining": 346122,
-    "remainingKnown": 10,
-    "target": 215579.2,
-    "targetKnown": 9,
+    "remainingKnown": 11,
+    "target": 243429.2,
+    "targetKnown": 10,
     "currentDue": 0.9,
-    "dueKnown": 9,
+    "dueKnown": 10,
     "urgent": 7
   },
   "changes": [
     {
-      "project": "933 Bienveneda",
-      "item": "Window/Door package",
+      "project": "14833 Sunset",
+      "item": "Alu Window",
       "kind": "Updated",
       "fields": [
         {
-          "key": "amount",
-          "before": 176704,
-          "after": 153857
-        },
-        {
-          "key": "paid",
-          "before": 17670.4,
-          "after": null
-        },
-        {
-          "key": "contract",
-          "before": "Preparing",
-          "after": ""
-        },
+          "key": "drawing",
+          "before": "",
+          "after": "Under Reviewing"
+        }
+      ]
+    },
+    {
+      "project": "867 ILIFF",
+      "item": "Steel/Alu Window",
+      "kind": "Updated",
+      "fields": [
         {
           "key": "drawing",
           "before": "Drafting",
           "after": "Updating"
+        }
+      ]
+    },
+    {
+      "project": "940 Bienveneda",
+      "item": "T7 Capsule House",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "amount",
+          "before": 49494,
+          "after": 24552
+        }
+      ]
+    },
+    {
+      "project": "940 Bienveneda",
+      "item": "T5 Office Trailer",
+      "kind": "Updated",
+      "fields": [
+        {
+          "key": "paid",
+          "before": null,
+          "after": 27850
         },
         {
           "key": "paymentStage",
-          "before": "Pay-to 10%",
-          "after": ""
+          "before": "",
+          "after": "Pay-to 100%"
         },
         {
           "key": "nextAction",
-          "before": "Shop drawing Under Reviewing",
-          "after": "Confirm proposal"
+          "before": "",
+          "after": "remove the shower room and move the vanity in"
         }
       ]
     }
   ],
-  "previousAt": "2026-10-12T01:01:46.794Z"
+  "previousAt": "2026-10-16T13:09:38.992Z"
 }
