@@ -836,5 +836,60 @@
         ]
       }
     ]
+  },
+  {
+    "fetchedAt": "2026-10-22T00:56:52.456Z",
+    "summary": {
+      "projects": 21,
+      "items": 29,
+      "amount": 2034475,
+      "unpriced": 6,
+      "paid": 261133.2,
+      "paidKnown": 13,
+      "paidUnknown": 16,
+      "remaining": 346122,
+      "remainingKnown": 11,
+      "target": 243429.2,
+      "targetKnown": 10,
+      "currentDue": 0.9,
+      "dueKnown": 10,
+      "urgent": 6
+    },
+    "changes": [
+      {
+        "project": "933 Bienveneda",
+        "item": "Millworks",
+        "kind": "Added",
+        "fields": []
+      },
+      {
+        "project": "1202 Rimmer",
+        "item": "Steel Window",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "amount",
+            "before": 289994,
+            "after": 291199
+          },
+          {
+            "key": "nextAction",
+            "before": "Pricing with Ferro",
+            "after": "prepayment+shop drawing"
+          },
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 18000
+          }
+        ]
+      },
+      {
+        "project": "528 Erskine",
+        "item": "Alu Window",
+        "kind": "Added",
+        "fields": []
+      }
+    ]
   }
 ]
