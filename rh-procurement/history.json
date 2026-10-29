@@ -1046,5 +1046,25 @@
         "fields": []
       }
     ]
+  },
+  {
+    "fetchedAt": "2026-10-29T02:00:29.386Z",
+    "summary": {
+      "projects": 21,
+      "items": 35,
+      "amount": 2071495,
+      "unpriced": 9,
+      "paid": 256339.2,
+      "paidKnown": 12,
+      "paidUnknown": 23,
+      "remaining": 302972,
+      "remainingKnown": 10,
+      "target": 238634.8,
+      "targetKnown": 9,
+      "currentDue": 0.5,
+      "dueKnown": 9,
+      "urgent": 6
+    },
+    "changes": []
   }
 ]
