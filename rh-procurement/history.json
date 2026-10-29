@@ -911,5 +911,140 @@
       "urgent": 6
     },
     "changes": []
+  },
+  {
+    "fetchedAt": "2026-10-29T01:09:05.743Z",
+    "summary": {
+      "projects": 21,
+      "items": 35,
+      "amount": 2071495,
+      "unpriced": 9,
+      "paid": 256339.2,
+      "paidKnown": 12,
+      "paidUnknown": 23,
+      "remaining": 302972,
+      "remainingKnown": 10,
+      "target": 238634.8,
+      "targetKnown": 9,
+      "currentDue": 0.5,
+      "dueKnown": 9,
+      "urgent": 6
+    },
+    "changes": [
+      {
+        "project": "927 Bienveneda",
+        "item": "Sofa & Rosery Table",
+        "kind": "Added",
+        "fields": []
+      },
+      {
+        "project": "927 Bienveneda",
+        "item": "Alu Window/Door",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "arrival",
+            "before": "2026-11-03",
+            "after": "2026-11-07"
+          }
+        ]
+      },
+      {
+        "project": "933 Bienveneda",
+        "item": "Millwork",
+        "kind": "Added",
+        "fields": []
+      },
+      {
+        "project": "1202 Rimmer",
+        "item": "Lighting",
+        "kind": "Added",
+        "fields": []
+      },
+      {
+        "project": "14221 Evans",
+        "item": "Steel Window · VO",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "arrival",
+            "before": "2026-11-03",
+            "after": "2026-11-07"
+          }
+        ]
+      },
+      {
+        "project": "3250 Seirra",
+        "item": "Stone",
+        "kind": "Added",
+        "fields": []
+      },
+      {
+        "project": "3250 Seirra",
+        "item": "Lighting",
+        "kind": "Added",
+        "fields": []
+      },
+      {
+        "project": "629 Erskine",
+        "item": "Alu Window(slim)",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "amount",
+            "before": 162911,
+            "after": null
+          },
+          {
+            "key": "nextAction",
+            "before": "Sampling",
+            "after": "Confirm proposal"
+          },
+          {
+            "key": "logistics",
+            "before": null,
+            "after": 19500
+          }
+        ]
+      },
+      {
+        "project": "629 Erskine",
+        "item": "Staircase",
+        "kind": "Updated",
+        "fields": [
+          {
+            "key": "amount",
+            "before": 47944,
+            "after": null
+          },
+          {
+            "key": "paid",
+            "before": 4794,
+            "after": null
+          },
+          {
+            "key": "contract",
+            "before": "Preparing",
+            "after": ""
+          },
+          {
+            "key": "paymentStage",
+            "before": "Pay-to 10%",
+            "after": ""
+          },
+          {
+            "key": "nextAction",
+            "before": "Shop drawing, in-person meeting with Paul",
+            "after": "Confirm proposal"
+          }
+        ]
+      },
+      {
+        "project": "867 ILIFF",
+        "item": "Lighting\n Marble Sink",
+        "kind": "Added",
+        "fields": []
+      }
+    ]
   }
 ]
